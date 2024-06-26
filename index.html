@@ -15,10 +15,12 @@
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
   </head>
-  <body>
-    <div
-      class="bg-cover bg-center h-[45rem]"
-      style="background-image: url('img/sky.jpg')"
+  <body class="" style="background-image: url('img/body.png')">
+    <!-- Главный экран -->
+
+    <main
+      class="max-w-[1100px] bg-cover mx-auto"
+      style="background-image: url('img/ocean.png')"
     >
       <header>
         <nav class="border-gray-200">
@@ -27,10 +29,10 @@
           >
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
               <!-- <img
-                src="https://flowbite.com/docs/images/logo.svg"
-                class="h-8"
-                alt="Flowbite Logo"
-              /> -->
+              src="https://flowbite.com/docs/images/logo.svg"
+              class="h-8"
+              alt="Flowbite Logo"
+            /> -->
               <span
                 class="self-center text-white text-2xl font-semibold whitespace-nowrap dark:text-white"
                 >$WHALE</span
@@ -67,16 +69,12 @@
             >
               <div class="relative w-full max-w-2xl max-h-full">
                 <!-- Modal content -->
-                <div
-                  class="relative bg-white rounded-lg shadow dark:bg-gray-700"
-                >
+                <div class="relative rounded-lg shadow bg-gray-700">
                   <!-- Modal header -->
                   <div
-                    class="flex items-start justify-between p-4 md:p-5 rounded-t dark:border-gray-600"
+                    class="flex items-start justify-between p-4 md:p-5 rounded-t border-gray-600"
                   >
-                    <ul
-                      class="font-medium flex flex-col px-4 md:p-0 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
-                    >
+                    <ul class="font-medium flex flex-col px-4 rounded-lg">
                       <li>
                         <a
                           data-modal-hide="top-left-modal"
@@ -790,623 +788,711 @@
           </div>
         </nav>
       </header>
-
-      <div class="flex flex-col justify-center items-center h-full">
-        <div class="text-center">
-          <h1 class="text-8xl text-white">$WHALE</h1>
-          <h4 class="text-2xl tracking-wide text-white font-bold">
-            Присоединяйся к стримам
-          </h4>
-        </div>
-        <img class="w-[35rem] mt-40" src="img/kit.png" alt="" />
-      </div>
-    </div>
-    <div
-      class="bg-cover bg-center"
-      style="
-        background-image: url('img/vecteezy_underwater-ocean-background-black-silhouettes-swimming-sea_8216005.svg');
-      "
-    >
-      <div class="flex justify-start items-center flex-col mt-2">
-        <div>
-          <div
-            class="rounded-2xl flex gap-9 flex-col items-center justify-center"
-          >
+      <div
+        class="flex flex-col justify-center items-center md:min-h-[50rem] md:justify-around"
+      >
+        <div class="flex flex-col justify-center gap-16 items-center">
+          <!-- Название и фраза -->
+          <div class="text-center">
+            <h1 class="text-7xl text-white md:text-9xl">$WHALE</h1>
+            <h4 class="text-2xl tracking-wide text-white font-bold">
+              Присоединяйся к стримам
+            </h4>
+          </div>
+          <!-- Таймер -->
+          <div>
             <div
-              class="flex items-start justify-center w-full gap-1.5 count-down-main"
+              class="rounded-2xl flex gap-9 flex-col items-center justify-center"
             >
-              <div class="timer">
-                <div
-                  class="rounded-xl bg-black/25 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3"
-                >
-                  <h3
-                    class="countdown-element days font-manrope font-semibold text-3xl text-white text-center"
-                  ></h3>
-                  <p
-                    class="text-lg uppercase font-normal text-white mt-1 text-center w-full"
-                  >
-                    дней
-                  </p>
-                </div>
-              </div>
-
-              <div class="timer">
-                <div
-                  class="rounded-xl bg-black/25 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3"
-                >
-                  <h3
-                    class="countdown-element hours font-manrope font-semibold text-3xl text-white text-center"
-                  ></h3>
-                  <p
-                    class="text-lg uppercase font-normal text-white mt-1 text-center w-full"
-                  >
-                    часов
-                  </p>
-                </div>
-              </div>
-
-              <div class="timer">
-                <div
-                  class="rounded-xl bg-black/25 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3"
-                >
-                  <h3
-                    class="countdown-element minutes font-manrope font-semibold text-3xl text-white text-center"
-                  ></h3>
-                  <p
-                    class="text-lg fo uppercasent-normal text-white mt-1 text-center w-full"
-                  >
-                    Минут
-                  </p>
-                </div>
-              </div>
-
-              <div class="timer">
-                <div
-                  class="rounded-xl bg-black/25 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3"
-                >
-                  <h3
-                    class="countdown-element seconds font-manrope font-semibold text-3xl text-white text-center"
-                  ></h3>
-                  <p
-                    class="text-lg fo uppercasent-normal text-white mt-1 text-center w-full"
-                  >
-                    Секунд
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <p class="text-center text-gray-700 py-1.5">left until listing</p>
-        </div>
-        <div>
-          <button
-            type="button"
-            class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-2xl text-2xl w-56 px-5 py-4 text-center me-2 my-2"
-          >
-            Play
-          </button>
-        </div>
-        <div id="section1" class="my-6">
-          <h1 class="text-3xl font-bold">ROADMAP</h1>
-        </div>
-        <div class="w-full px-5 py-5 md:px-20">
-          <div
-            class="rounded-xl from-rose-400 via-fuchsia-500 to-indigo-500 bg-gradient-to-r p-0.5"
-          >
-            <div class="block p-6 rounded-xl bg-white shadow">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                Noteworthy technology acquisitions 2021
-              </h5>
-              <p class="font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="w-full px-5 py-5 md:px-20">
-          <div
-            class="rounded-xl from-rose-400 via-fuchsia-500 to-indigo-500 bg-gradient-to-r p-0.5"
-          >
-            <div class="block p-6 rounded-xl bg-white shadow">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                Noteworthy technology acquisitions 2021
-              </h5>
-              <p class="font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="w-full px-5 py-5 md:px-20">
-          <div
-            class="rounded-xl from-rose-400 via-fuchsia-500 to-indigo-500 bg-gradient-to-r p-0.5"
-          >
-            <div class="block p-6 rounded-xl bg-white shadow">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                Noteworthy technology acquisitions 2021
-              </h5>
-              <p class="font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="w-full px-5 py-5 md:px-20">
-          <div
-            class="rounded-xl from-rose-400 via-fuchsia-500 to-indigo-500 bg-gradient-to-r p-0.5"
-          >
-            <div class="block p-6 rounded-xl bg-white shadow">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                Noteworthy technology acquisitions 2021
-              </h5>
-              <p class="font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="w-full px-5 py-5 md:px-20">
-          <div
-            class="rounded-xl from-rose-400 via-fuchsia-500 to-indigo-500 bg-gradient-to-r p-0.5"
-          >
-            <div class="block p-6 rounded-xl bg-white shadow">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                Noteworthy technology acquisitions 2021
-              </h5>
-              <p class="font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div id="section2" class="my-6">
-          <h1 class="text-3xl text-black font-bold">TOKENOMICS</h1>
-        </div>
-        <div class="flex justify-center items-center flex-wrap w-full">
-          <div class="w-full px-2 md:mr-36 md:w-[50rem]">
-            <div class="relative w-full overflow-x-auto">
-              <table
-                class="text-sm w-full text-left rtl:text-right text-gray-300 dark:text-gray-400"
+              <div
+                class="flex items-start justify-center w-full gap-1.5 count-down-main"
               >
-                <thead
-                  class="text-xs text-white uppercase bg-gray-700 dark:text-gray-400"
-                >
-                  <tr>
-                    <th scope="col" class="px-6 py-3">Product name</th>
-                    <th scope="col" class="px-6 py-3">Color</th>
-                    <th scope="col" class="px-6 py-3">Category</th>
-                    <th scope="col" class="px-6 py-3">Price</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="border-b dark:bg-gray-800 dark:border-gray-700">
-                    <th
-                      scope="row"
-                      class="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white"
+                <div class="timer">
+                  <div
+                    class="rounded-xl bg-black/25 backdrop-blur-sm py-3 min-w-[76px] flex items-center justify-center flex-col gap-1 px-2 md:min-w-[96px] md:px-3"
+                  >
+                    <h3
+                      class="countdown-element days font-manrope font-semibold text-3xl text-white text-center"
+                    ></h3>
+                    <p
+                      class="text-lg uppercase font-normal text-white mt-1 text-center w-full"
                     >
-                      Apple MacBook Pro 17"
-                    </th>
-                    <td class="px-6 py-4">Silver</td>
-                    <td class="px-6 py-4">Laptop</td>
-                    <td class="px-6 py-4">$2999</td>
-                  </tr>
-                  <tr class="border-b dark:bg-gray-800 dark:border-gray-700">
-                    <th
-                      scope="row"
-                      class="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white"
-                    >
-                      Microsoft Surface Pro
-                    </th>
-                    <td class="px-6 py-4">White</td>
-                    <td class="px-6 py-4">Laptop PC</td>
-                    <td class="px-6 py-4">$1999</td>
-                  </tr>
-                  <tr class="border-b dark:bg-gray-800">
-                    <th
-                      scope="row"
-                      class="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white"
-                    >
-                      Magic Mouse 2
-                    </th>
-                    <td class="px-6 py-4">Black</td>
-                    <td class="px-6 py-4">Accessories</td>
-                    <td class="px-6 py-4">$99</td>
-                  </tr>
-                  <tr class="border-b dark:bg-gray-800">
-                    <th
-                      scope="row"
-                      class="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white"
-                    >
-                      Magic Mouse 2
-                    </th>
-                    <td class="px-6 py-4">Black</td>
-                    <td class="px-6 py-4">Accessories</td>
-                    <td class="px-6 py-4">$99</td>
-                  </tr>
-                  <tr class="border-b dark:bg-gray-800">
-                    <th
-                      scope="row"
-                      class="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white"
-                    >
-                      Magic Mouse 2
-                    </th>
-                    <td class="px-6 py-4">Black</td>
-                    <td class="px-6 py-4">Accessories</td>
-                    <td class="px-6 py-4">$99</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div>
-            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                      дней
+                    </p>
+                  </div>
+                </div>
 
-            <div class="font-sans leading-normal tracking-normal">
-              <canvas id="myChart"></canvas>
+                <div class="timer">
+                  <div
+                    class="rounded-xl bg-black/25 backdrop-blur-sm py-3 min-w-[76px] flex items-center justify-center flex-col gap-1 px-2 md:min-w-[96px] md:px-3"
+                  >
+                    <h3
+                      class="countdown-element hours font-manrope font-semibold text-3xl text-white text-center"
+                    ></h3>
+                    <p
+                      class="text-lg uppercase font-normal text-white mt-1 text-center w-full"
+                    >
+                      часов
+                    </p>
+                  </div>
+                </div>
 
-              <script>
-                var ctx = document.getElementById("myChart").getContext("2d");
-                var myChart = new Chart(ctx, {
-                  type: "pie",
-                  data: {
-                    labels: ["Red", "Blue", "Yellow"],
-                    datasets: [
-                      {
-                        data: [30, 40, 20],
-                        backgroundColor: [
-                          "rgba(255, 99, 132, 0.7)",
-                          "rgba(54, 162, 235, 0.7)",
-                          "rgba(255, 206, 86, 0.7)",
-                        ],
-                        borderColor: [
-                          "rgba(255, 99, 132, 1)",
-                          "rgba(54, 162, 235, 1)",
-                          "rgba(255, 206, 86, 1)",
-                        ],
-                        borderWidth: 1,
-                      },
-                    ],
-                  },
-                  options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    legend: {
-                      position: "bottom",
-                      labels: {
-                        fontColor: "black",
-                        fontSize: 14,
-                        padding: 20,
-                      },
-                    },
-                  },
-                });
-              </script>
+                <div class="timer">
+                  <div
+                    class="rounded-xl bg-black/25 backdrop-blur-sm py-3 min-w-[76px] flex items-center justify-center flex-col gap-1 px-2 md:min-w-[96px] md:px-3"
+                  >
+                    <h3
+                      class="countdown-element minutes font-manrope font-semibold text-3xl text-white text-center"
+                    ></h3>
+                    <p
+                      class="text-lg fo uppercasent-normal text-white mt-1 text-center w-full"
+                    >
+                      Минут
+                    </p>
+                  </div>
+                </div>
+
+                <div class="timer">
+                  <div
+                    class="rounded-xl bg-black/25 backdrop-blur-sm py-3 min-w-[76px] flex items-center justify-center flex-col gap-1 px-2 md:min-w-[96px] md:px-3"
+                  >
+                    <h3
+                      class="countdown-element seconds font-manrope font-semibold text-3xl text-white text-center"
+                    ></h3>
+                    <p
+                      class="text-lg fo uppercasent-normal text-white mt-1 text-center w-full"
+                    >
+                      Секунд
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+            <p class="text-center text-gray-100 py-1.5">left until listing</p>
           </div>
-        </div>
-        <div id="section3" class="my-6">
-          <h1 class="text-3xl text-white font-bold">PRE-SALE</h1>
-        </div>
-        <div class="flex justify-center gap-10 items-center w-full md:gap-36">
-          <div class="text-4xl text-white font-bold shrink-0 md:text-8xl">
-            <h1>Maybe you</h1>
-            <h1>want to</h1>
-            <h1>start listing?</h1>
-          </div>
+          <!-- Кнопка play -->
           <div>
-            <img class="w-[30rem]" src="img/shark.png" alt="" />
-          </div>
-        </div>
-        <div>
-          <button
-            type="button"
-            class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-2xl text-2xl w-56 px-5 py-4 text-center me-2 my-2"
-          >
-            Play
-          </button>
-        </div>
-        <div id="section4" class="my-6">
-          <h1 class="text-3xl text-white font-bold">OUR RESOURCES</h1>
-        </div>
-        <div
-          class="flex justify-center gap-10 px-2 items-center w-full md:gap-36 md:px-0"
-        >
-          <div class="md:w-[20rem] shrink-0">
-            <ul class="flex flex-col gap-1">
-              <li>
-                <a
-                  href="#"
-                  class="text-white flex justify-between font-medium rounded-lg border hover:bg-gradient-to-r from-purple-500 to-pink-500 text-sm px-4 py-2.5 text-center items-center me-2 mb-2 md:px-5"
-                >
-                  <svg
-                    class="w-5 h-5 me-2 md:w-10 md:h-10"
-                    viewBox="0 0 256 256"
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    preserveAspectRatio="xMidYMid"
-                    fill="#000000"
-                  >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <g>
-                        <path
-                          d="M128,0 C57.307,0 0,57.307 0,128 L0,128 C0,198.693 57.307,256 128,256 L128,256 C198.693,256 256,198.693 256,128 L256,128 C256,57.307 198.693,0 128,0 L128,0 Z"
-                          fill="#40B3E0"
-                        ></path>
-                        <path
-                          d="M190.2826,73.6308 L167.4206,188.8978 C167.4206,188.8978 164.2236,196.8918 155.4306,193.0548 L102.6726,152.6068 L83.4886,143.3348 L51.1946,132.4628 C51.1946,132.4628 46.2386,130.7048 45.7586,126.8678 C45.2796,123.0308 51.3546,120.9528 51.3546,120.9528 L179.7306,70.5928 C179.7306,70.5928 190.2826,65.9568 190.2826,73.6308"
-                          fill="#FFFFFF"
-                        ></path>
-                        <path
-                          d="M98.6178,187.6035 C98.6178,187.6035 97.0778,187.4595 95.1588,181.3835 C93.2408,175.3085 83.4888,143.3345 83.4888,143.3345 L161.0258,94.0945 C161.0258,94.0945 165.5028,91.3765 165.3428,94.0945 C165.3428,94.0945 166.1418,94.5735 163.7438,96.8115 C161.3458,99.0505 102.8328,151.6475 102.8328,151.6475"
-                          fill="#D2E5F1"
-                        ></path>
-                        <path
-                          d="M122.9015,168.1154 L102.0335,187.1414 C102.0335,187.1414 100.4025,188.3794 98.6175,187.6034 L102.6135,152.2624"
-                          fill="#B5CFE4"
-                        ></path>
-                      </g>
-                    </g>
-                  </svg>
-                  <h4 class="md:text-xl">TELEGRAM CHANNEL</h4>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-white flex justify-between font-medium rounded-lg border hover:bg-gradient-to-r from-purple-500 to-pink-500 text-sm px-5 py-2.5 text-center items-center me-2 mb-2"
-                >
-                  <svg
-                    class="w-5 h-5 me-2 md:w-10 md:h-10"
-                    viewBox="0 0 256 256"
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    preserveAspectRatio="xMidYMid"
-                    fill="#000000"
-                  >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <g>
-                        <path
-                          d="M128,0 C57.307,0 0,57.307 0,128 L0,128 C0,198.693 57.307,256 128,256 L128,256 C198.693,256 256,198.693 256,128 L256,128 C256,57.307 198.693,0 128,0 L128,0 Z"
-                          fill="#40B3E0"
-                        ></path>
-                        <path
-                          d="M190.2826,73.6308 L167.4206,188.8978 C167.4206,188.8978 164.2236,196.8918 155.4306,193.0548 L102.6726,152.6068 L83.4886,143.3348 L51.1946,132.4628 C51.1946,132.4628 46.2386,130.7048 45.7586,126.8678 C45.2796,123.0308 51.3546,120.9528 51.3546,120.9528 L179.7306,70.5928 C179.7306,70.5928 190.2826,65.9568 190.2826,73.6308"
-                          fill="#FFFFFF"
-                        ></path>
-                        <path
-                          d="M98.6178,187.6035 C98.6178,187.6035 97.0778,187.4595 95.1588,181.3835 C93.2408,175.3085 83.4888,143.3345 83.4888,143.3345 L161.0258,94.0945 C161.0258,94.0945 165.5028,91.3765 165.3428,94.0945 C165.3428,94.0945 166.1418,94.5735 163.7438,96.8115 C161.3458,99.0505 102.8328,151.6475 102.8328,151.6475"
-                          fill="#D2E5F1"
-                        ></path>
-                        <path
-                          d="M122.9015,168.1154 L102.0335,187.1414 C102.0335,187.1414 100.4025,188.3794 98.6175,187.6034 L102.6135,152.2624"
-                          fill="#B5CFE4"
-                        ></path>
-                      </g>
-                    </g>
-                  </svg>
-                  <h4 class="md:text-xl">$WHALE GAME BOT</h4>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-white flex justify-between text-center font-medium rounded-lg border hover:bg-gradient-to-r from-purple-500 to-pink-500 text-sm px-5 py-2.5 items-center me-2 mb-2"
-                >
-                  <!-- <svg class="w-10 h-10 me-2" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M128,0 C57.307,0 0,57.307 0,128 L0,128 C0,198.693 57.307,256 128,256 L128,256 C198.693,256 256,198.693 256,128 L256,128 C256,57.307 198.693,0 128,0 L128,0 Z" fill="#40B3E0"> </path> <path d="M190.2826,73.6308 L167.4206,188.8978 C167.4206,188.8978 164.2236,196.8918 155.4306,193.0548 L102.6726,152.6068 L83.4886,143.3348 L51.1946,132.4628 C51.1946,132.4628 46.2386,130.7048 45.7586,126.8678 C45.2796,123.0308 51.3546,120.9528 51.3546,120.9528 L179.7306,70.5928 C179.7306,70.5928 190.2826,65.9568 190.2826,73.6308" fill="#FFFFFF"> </path> <path d="M98.6178,187.6035 C98.6178,187.6035 97.0778,187.4595 95.1588,181.3835 C93.2408,175.3085 83.4888,143.3345 83.4888,143.3345 L161.0258,94.0945 C161.0258,94.0945 165.5028,91.3765 165.3428,94.0945 C165.3428,94.0945 166.1418,94.5735 163.7438,96.8115 C161.3458,99.0505 102.8328,151.6475 102.8328,151.6475" fill="#D2E5F1"> </path> <path d="M122.9015,168.1154 L102.0335,187.1414 C102.0335,187.1414 100.4025,188.3794 98.6175,187.6034 L102.6135,152.2624" fill="#B5CFE4"> </path> </g> </g></svg> -->
-                  <svg
-                    class="w-5 h-5 me-2 md:w-10 md:h-10"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <rect
-                        x="2"
-                        y="2"
-                        width="28"
-                        height="28"
-                        rx="6"
-                        fill="url(#paint0_radial_87_7153)"
-                      ></rect>
-                      <rect
-                        x="2"
-                        y="2"
-                        width="28"
-                        height="28"
-                        rx="6"
-                        fill="url(#paint1_radial_87_7153)"
-                      ></rect>
-                      <rect
-                        x="2"
-                        y="2"
-                        width="28"
-                        height="28"
-                        rx="6"
-                        fill="url(#paint2_radial_87_7153)"
-                      ></rect>
-                      <path
-                        d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z"
-                        fill="white"
-                      ></path>
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z"
-                        fill="white"
-                      ></path>
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z"
-                        fill="white"
-                      ></path>
-                      <defs>
-                        <radialGradient
-                          id="paint0_radial_87_7153"
-                          cx="0"
-                          cy="0"
-                          r="1"
-                          gradientUnits="userSpaceOnUse"
-                          gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)"
-                        >
-                          <stop stop-color="#B13589"></stop>
-                          <stop offset="0.79309" stop-color="#C62F94"></stop>
-                          <stop offset="1" stop-color="#8A3AC8"></stop>
-                        </radialGradient>
-                        <radialGradient
-                          id="paint1_radial_87_7153"
-                          cx="0"
-                          cy="0"
-                          r="1"
-                          gradientUnits="userSpaceOnUse"
-                          gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)"
-                        >
-                          <stop stop-color="#E0E8B7"></stop>
-                          <stop offset="0.444662" stop-color="#FB8A2E"></stop>
-                          <stop offset="0.71474" stop-color="#E2425C"></stop>
-                          <stop
-                            offset="1"
-                            stop-color="#E2425C"
-                            stop-opacity="0"
-                          ></stop>
-                        </radialGradient>
-                        <radialGradient
-                          id="paint2_radial_87_7153"
-                          cx="0"
-                          cy="0"
-                          r="1"
-                          gradientUnits="userSpaceOnUse"
-                          gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)"
-                        >
-                          <stop offset="0.156701" stop-color="#406ADC"></stop>
-                          <stop offset="0.467799" stop-color="#6A45BE"></stop>
-                          <stop
-                            offset="1"
-                            stop-color="#6A45BE"
-                            stop-opacity="0"
-                          ></stop>
-                        </radialGradient>
-                      </defs>
-                    </g>
-                  </svg>
-                  <h4 class="md:text-xl">INSTAGRAM</h4>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-white flex justify-between font-medium rounded-lg border hover:bg-gradient-to-r from-purple-500 to-pink-500 text-sm px-5 py-2.5 text-center items-center me-2 mb-2"
-                >
-                  <!-- <svg class="w-10 h-10 me-2" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M128,0 C57.307,0 0,57.307 0,128 L0,128 C0,198.693 57.307,256 128,256 L128,256 C198.693,256 256,198.693 256,128 L256,128 C256,57.307 198.693,0 128,0 L128,0 Z" fill="#40B3E0"> </path> <path d="M190.2826,73.6308 L167.4206,188.8978 C167.4206,188.8978 164.2236,196.8918 155.4306,193.0548 L102.6726,152.6068 L83.4886,143.3348 L51.1946,132.4628 C51.1946,132.4628 46.2386,130.7048 45.7586,126.8678 C45.2796,123.0308 51.3546,120.9528 51.3546,120.9528 L179.7306,70.5928 C179.7306,70.5928 190.2826,65.9568 190.2826,73.6308" fill="#FFFFFF"> </path> <path d="M98.6178,187.6035 C98.6178,187.6035 97.0778,187.4595 95.1588,181.3835 C93.2408,175.3085 83.4888,143.3345 83.4888,143.3345 L161.0258,94.0945 C161.0258,94.0945 165.5028,91.3765 165.3428,94.0945 C165.3428,94.0945 166.1418,94.5735 163.7438,96.8115 C161.3458,99.0505 102.8328,151.6475 102.8328,151.6475" fill="#D2E5F1"> </path> <path d="M122.9015,168.1154 L102.0335,187.1414 C102.0335,187.1414 100.4025,188.3794 98.6175,187.6034 L102.6135,152.2624" fill="#B5CFE4"> </path> </g> </g></svg> -->
-                  <svg
-                    class="w-5 h-5 me-2 md:w-10 md:h-10"
-                    viewBox="0 0 16 16"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                  >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <path
-                        fill="red"
-                        d="M14.712 4.633a1.754 1.754 0 00-1.234-1.234C12.382 3.11 8 3.11 8 3.11s-4.382 0-5.478.289c-.6.161-1.072.634-1.234 1.234C1 5.728 1 8 1 8s0 2.283.288 3.367c.162.6.635 1.073 1.234 1.234C3.618 12.89 8 12.89 8 12.89s4.382 0 5.478-.289a1.754 1.754 0 001.234-1.234C15 10.272 15 8 15 8s0-2.272-.288-3.367z"
-                      ></path>
-                      <path
-                        fill="#ffffff"
-                        d="M6.593 10.11l3.644-2.098-3.644-2.11v4.208z"
-                      ></path>
-                    </g>
-                  </svg>
-                  <h4 class="md:text-xl">YOUTUBE CHANNEL</h4>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <img class="w-[30rem]" src="img/shark.png" alt="" />
+            <button
+              type="button"
+              class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-2xl text-2xl w-56 px-5 py-4 text-center me-2"
+            >
+              Play
+            </button>
           </div>
         </div>
       </div>
-      <footer class="w-full">
-        <div class="mx-auto p-4 md:py-8">
-          <div class="sm:flex sm:items-center sm:justify-between">
-            <a
-              href="#"
-              class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
-            >
-              <!-- <img
-                src="https://flowbite.com/docs/images/logo.svg"
-                class="h-8"
-                alt="Flowbite Logo"
-              /> -->
-              <span
-                class="self-center text-white text-2xl font-semibold whitespace-nowrap"
-                >$WHALE</span
-              >
-            </a>
-            <ul
-              class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-200 sm:mb-0 dark:text-gray-400"
-            >
-              <li>
-                <a href="#section1" class="hover:underline me-4 md:me-6"
-                  >ROADMAP</a
-                >
-              </li>
-              <li>
-                <a href="#section2" class="hover:underline me-4 md:me-6"
-                  >TOKENOMICS</a
-                >
-              </li>
-              <li>
-                <a href="#section3" class="hover:underline me-4 md:me-6"
-                  >PRE-SALE</a
-                >
-              </li>
-              <li>
-                <a href="#section4" class="hover:underline">OUR RESOURCES</a>
-              </li>
-            </ul>
-          </div>
-          <hr
-            class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
-          />
-          <span
-            class="block text-sm text-gray-200 sm:text-center dark:text-gray-400"
-            >© 2024 <a href="#" class="hover:underline">$WHALE™</a>. All Rights
-            Reserved.</span
+      <div>
+        <div
+          class="flex justify-start items-center mt-16 flex-col gap-16 md:mt-0 md:ga-0"
+        >
+          <!-- Секция ROADMAP -->
+          <div
+            class="flex justify-center items-center flex-col w-full min-h-svh gap-5"
           >
+            <div id="section1">
+              <h1 class="text-4xl text-white font-bold">ROADMAP</h1>
+            </div>
+            <div class="w-full px-5 md:px-20">
+              <div class="rounded-xl border-2 border-sky-600 p-0.5">
+                <div class="block p-6 rounded-xl shadow">
+                  <h5
+                    class="mb-2 text-2xl font-bold tracking-tight text-gray-50"
+                  >
+                    Noteworthy technology acquisitions 2021
+                  </h5>
+                  <p class="font-normal text-gray-700 dark:text-gray-200">
+                    Here are the biggest enterprise technology acquisitions of
+                    2021 so far, in reverse chronological order.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full px-5 md:px-20">
+              <div class="rounded-xl border-2 border-sky-600 p-0.5">
+                <div class="block p-6 rounded-xl shadow">
+                  <h5
+                    class="mb-2 text-2xl font-bold tracking-tight text-gray-200"
+                  >
+                    Noteworthy technology acquisitions 2021
+                  </h5>
+                  <p class="font-normal text-gray-700 dark:text-gray-300">
+                    Here are the biggest enterprise technology acquisitions of
+                    2021 so far, in reverse chronological order.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full px-5 md:px-20">
+              <div class="rounded-xl border-2 border-sky-600 p-0.5">
+                <div class="block p-6 rounded-xl shadow">
+                  <h5
+                    class="mb-2 text-2xl font-bold tracking-tight text-gray-200"
+                  >
+                    Noteworthy technology acquisitions 2021
+                  </h5>
+                  <p class="font-normal text-gray-700 dark:text-gray-300">
+                    Here are the biggest enterprise technology acquisitions of
+                    2021 so far, in reverse chronological order.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full px-5 md:px-20">
+              <div class="rounded-xl border-2 border-sky-600 p-0.5">
+                <div class="block p-6 rounded-xl shadow">
+                  <h5
+                    class="mb-2 text-2xl font-bold tracking-tight text-gray-200"
+                  >
+                    Noteworthy technology acquisitions 2021
+                  </h5>
+                  <p class="font-normal text-gray-700 dark:text-gray-300">
+                    Here are the biggest enterprise technology acquisitions of
+                    2021 so far, in reverse chronological order.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full px-5 md:px-20">
+              <div class="rounded-xl border-2 border-sky-600 p-0.5">
+                <div class="block p-6 rounded-xl shadow">
+                  <h5
+                    class="mb-2 text-2xl font-bold tracking-tight text-gray-200"
+                  >
+                    Noteworthy technology acquisitions 2021
+                  </h5>
+                  <p class="font-normal text-gray-700 dark:text-gray-300">
+                    Here are the biggest enterprise technology acquisitions of
+                    2021 so far, in reverse chronological order.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Секция TOKENOMICS -->
+          <div
+            class="flex justify-center gap-5 items-center flex-col ga w-full md:min-h-svh"
+          >
+            <div id="section2">
+              <h1 class="text-4xl text-white font-bold">TOKENOMICS</h1>
+            </div>
+            <div
+              class="flex justify-center items-center gap-5 flex-wrap w-full h-full md:my-auto md:gap-32"
+            >
+              <div class="w-full px-2 md:w-[60rem]">
+                <div class="relative w-full overflow-x-auto">
+                  <table class="text-sm w-full text-left text-gray-300">
+                    <thead
+                      class="text-xs text-white uppercase bg-sky-700 md:text-base"
+                    >
+                      <tr>
+                        <th scope="col" class="px-6 py-3">Product name</th>
+                        <th scope="col" class="px-6 py-3">Color</th>
+                        <th scope="col" class="px-6 py-3">Category</th>
+                        <th scope="col" class="px-6 py-3">Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr
+                        class="border-b bg-sky-800 border-sky-600 hover:bg-sky-600"
+                      >
+                        <th
+                          scope="row"
+                          class="px-6 py-4 font-medium text-white whitespace-nowrap"
+                        >
+                          Apple MacBook Pro 17"
+                        </th>
+                        <td class="px-6 py-4">Silver</td>
+                        <td class="px-6 py-4">Laptop</td>
+                        <td class="px-6 py-4">$2999</td>
+                      </tr>
+                      <tr
+                        class="border-b bg-sky-800 border-sky-600 hover:bg-sky-600"
+                      >
+                        <th
+                          scope="row"
+                          class="px-6 py-4 font-medium text-white whitespace-nowrap"
+                        >
+                          Microsoft Surface Pro
+                        </th>
+                        <td class="px-6 py-4">White</td>
+                        <td class="px-6 py-4">Laptop PC</td>
+                        <td class="px-6 py-4">$1999</td>
+                      </tr>
+                      <tr
+                        class="border-b bg-sky-800 border-sky-600 hover:bg-sky-600"
+                      >
+                        <th
+                          scope="row"
+                          class="px-6 py-4 font-medium text-white whitespace-nowrap"
+                        >
+                          Magic Mouse 2
+                        </th>
+                        <td class="px-6 py-4">Black</td>
+                        <td class="px-6 py-4">Accessories</td>
+                        <td class="px-6 py-4">$99</td>
+                      </tr>
+                      <tr
+                        class="border-b bg-sky-800 border-sky-600 hover:bg-sky-600"
+                      >
+                        <th
+                          scope="row"
+                          class="px-6 py-4 font-medium text-white whitespace-nowrap"
+                        >
+                          Magic Mouse 2
+                        </th>
+                        <td class="px-6 py-4">Black</td>
+                        <td class="px-6 py-4">Accessories</td>
+                        <td class="px-6 py-4">$99</td>
+                      </tr>
+                      <tr
+                        class="border-b bg-sky-800 border-sky-600 hover:bg-sky-600"
+                      >
+                        <th
+                          scope="row"
+                          class="px-6 py-4 font-medium text-white whitespace-nowrap"
+                        >
+                          Magic Mouse 2
+                        </th>
+                        <td class="px-6 py-4">Black</td>
+                        <td class="px-6 py-4">Accessories</td>
+                        <td class="px-6 py-4">$99</td>
+                      </tr>
+                      <tr
+                        class="border-b bg-sky-800 border-sky-600 hover:bg-sky-600"
+                      >
+                        <th
+                          scope="row"
+                          class="px-6 py-4 font-medium text-white whitespace-nowrap"
+                        >
+                          Magic Mouse 2
+                        </th>
+                        <td class="px-6 py-4">Black</td>
+                        <td class="px-6 py-4">Accessories</td>
+                        <td class="px-6 py-4">$99</td>
+                      </tr>
+                      <tr
+                        class="border-b bg-sky-800 border-sky-600 hover:bg-sky-600"
+                      >
+                        <th
+                          scope="row"
+                          class="px-6 py-4 font-medium text-white whitespace-nowrap"
+                        >
+                          Magic Mouse 2
+                        </th>
+                        <td class="px-6 py-4">Black</td>
+                        <td class="px-6 py-4">Accessories</td>
+                        <td class="px-6 py-4">$99</td>
+                      </tr>
+                      <tr class="bg-sky-800 hover:bg-sky-600">
+                        <th
+                          scope="row"
+                          class="px-6 py-4 font-medium text-white whitespace-nowrap"
+                        >
+                          Magic Mouse 2
+                        </th>
+                        <td class="px-6 py-4">Black</td>
+                        <td class="px-6 py-4">Accessories</td>
+                        <td class="px-6 py-4">$99</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- Chart -->
+              <div class="border-2 border-sky-700 rounded-xl p-5">
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                <div class="font-sans leading-normal tracking-normal">
+                  <canvas
+                    class="w-full h-full text-white"
+                    id="myChart"
+                  ></canvas>
+
+                  <script>
+                    var ctx = document
+                      .getElementById("myChart")
+                      .getContext("2d");
+                    var myChart = new Chart(ctx, {
+                      type: "pie",
+                      data: {
+                        labels: ["dfsdf", "Blue", "Yellow"],
+                        datasets: [
+                          {
+                            data: [30, 40, 20],
+                            backgroundColor: [
+                              "rgba(255, 99, 132, 0.7)",
+                              "rgba(54, 162, 235, 0.7)",
+                              "rgba(255, 206, 86, 0.7)",
+                            ],
+                            borderColor: [
+                              "rgba(255, 99, 132, 1)",
+                              "rgba(54, 162, 235, 1)",
+                              "rgba(255, 206, 86, 1)",
+                            ],
+                            borderWidth: 2,
+                          },
+                        ],
+                      },
+                      options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        legend: {
+                          position: "bottom",
+                          labels: {
+                            fontColor: "black",
+                            fontSize: 14,
+                            padding: 20,
+                          },
+                        },
+                      },
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Секция PRE-SALE -->
+          <div
+            class="flex justify-around items-center flex-col w-full h-svh md:gap-16"
+          >
+            <div id="section3">
+              <h1 class="text-4xl text-white font-bold">PRE-SALE</h1>
+            </div>
+            <div
+              class="flex justify-center items-start w-full md:gap-36 md:justify-start"
+            >
+              <div
+                class="text-7xl text-center text-white font-bold shrink-0 md:text-9xl md:text-left"
+              >
+                <h1>Maybe you</h1>
+                <h1 class="py-16 md:my-16">want to</h1>
+                <h1>start listing?</h1>
+              </div>
+            </div>
+            <div>
+              <button
+                type="button"
+                class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-2xl text-2xl w-56 px-5 py-4 text-center me-2 my-2"
+              >
+                Play
+              </button>
+            </div>
+          </div>
+          <!-- Секция OUR RESOURCES -->
+          <div class="flex justify-start items-center flex-col w-full">
+            <div id="section4" class="my-6">
+              <h1 class="text-3xl text-white font-bold">OUR RESOURCES</h1>
+            </div>
+            <div
+              class="flex justify-center gap-10 px-2 items-center w-full h-svh md:gap-36 md:px-0"
+            >
+              <div class="md:w-[20rem] shrink-0">
+                <ul class="flex flex-col gap-1">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-white flex justify-between font-medium rounded-lg border hover:bg-gradient-to-r from-purple-500 to-pink-500 text-sm px-4 py-2.5 text-center items-center me-2 mb-2 md:px-5"
+                    >
+                      <svg
+                        class="w-5 h-5 me-2 md:w-10 md:h-10"
+                        viewBox="0 0 256 256"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        preserveAspectRatio="xMidYMid"
+                        fill="#000000"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <g>
+                            <path
+                              d="M128,0 C57.307,0 0,57.307 0,128 L0,128 C0,198.693 57.307,256 128,256 L128,256 C198.693,256 256,198.693 256,128 L256,128 C256,57.307 198.693,0 128,0 L128,0 Z"
+                              fill="#40B3E0"
+                            ></path>
+                            <path
+                              d="M190.2826,73.6308 L167.4206,188.8978 C167.4206,188.8978 164.2236,196.8918 155.4306,193.0548 L102.6726,152.6068 L83.4886,143.3348 L51.1946,132.4628 C51.1946,132.4628 46.2386,130.7048 45.7586,126.8678 C45.2796,123.0308 51.3546,120.9528 51.3546,120.9528 L179.7306,70.5928 C179.7306,70.5928 190.2826,65.9568 190.2826,73.6308"
+                              fill="#FFFFFF"
+                            ></path>
+                            <path
+                              d="M98.6178,187.6035 C98.6178,187.6035 97.0778,187.4595 95.1588,181.3835 C93.2408,175.3085 83.4888,143.3345 83.4888,143.3345 L161.0258,94.0945 C161.0258,94.0945 165.5028,91.3765 165.3428,94.0945 C165.3428,94.0945 166.1418,94.5735 163.7438,96.8115 C161.3458,99.0505 102.8328,151.6475 102.8328,151.6475"
+                              fill="#D2E5F1"
+                            ></path>
+                            <path
+                              d="M122.9015,168.1154 L102.0335,187.1414 C102.0335,187.1414 100.4025,188.3794 98.6175,187.6034 L102.6135,152.2624"
+                              fill="#B5CFE4"
+                            ></path>
+                          </g>
+                        </g>
+                      </svg>
+                      <h4 class="md:text-xl">TELEGRAM CHANNEL</h4>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-white flex justify-between font-medium rounded-lg border hover:bg-gradient-to-r from-purple-500 to-pink-500 text-sm px-5 py-2.5 text-center items-center me-2 mb-2"
+                    >
+                      <svg
+                        class="w-5 h-5 me-2 md:w-10 md:h-10"
+                        viewBox="0 0 256 256"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        preserveAspectRatio="xMidYMid"
+                        fill="#000000"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <g>
+                            <path
+                              d="M128,0 C57.307,0 0,57.307 0,128 L0,128 C0,198.693 57.307,256 128,256 L128,256 C198.693,256 256,198.693 256,128 L256,128 C256,57.307 198.693,0 128,0 L128,0 Z"
+                              fill="#40B3E0"
+                            ></path>
+                            <path
+                              d="M190.2826,73.6308 L167.4206,188.8978 C167.4206,188.8978 164.2236,196.8918 155.4306,193.0548 L102.6726,152.6068 L83.4886,143.3348 L51.1946,132.4628 C51.1946,132.4628 46.2386,130.7048 45.7586,126.8678 C45.2796,123.0308 51.3546,120.9528 51.3546,120.9528 L179.7306,70.5928 C179.7306,70.5928 190.2826,65.9568 190.2826,73.6308"
+                              fill="#FFFFFF"
+                            ></path>
+                            <path
+                              d="M98.6178,187.6035 C98.6178,187.6035 97.0778,187.4595 95.1588,181.3835 C93.2408,175.3085 83.4888,143.3345 83.4888,143.3345 L161.0258,94.0945 C161.0258,94.0945 165.5028,91.3765 165.3428,94.0945 C165.3428,94.0945 166.1418,94.5735 163.7438,96.8115 C161.3458,99.0505 102.8328,151.6475 102.8328,151.6475"
+                              fill="#D2E5F1"
+                            ></path>
+                            <path
+                              d="M122.9015,168.1154 L102.0335,187.1414 C102.0335,187.1414 100.4025,188.3794 98.6175,187.6034 L102.6135,152.2624"
+                              fill="#B5CFE4"
+                            ></path>
+                          </g>
+                        </g>
+                      </svg>
+                      <h4 class="md:text-xl">$WHALE GAME BOT</h4>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-white flex justify-between text-center font-medium rounded-lg border hover:bg-gradient-to-r from-purple-500 to-pink-500 text-sm px-5 py-2.5 items-center me-2 mb-2"
+                    >
+                      <!-- <svg class="w-10 h-10 me-2" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M128,0 C57.307,0 0,57.307 0,128 L0,128 C0,198.693 57.307,256 128,256 L128,256 C198.693,256 256,198.693 256,128 L256,128 C256,57.307 198.693,0 128,0 L128,0 Z" fill="#40B3E0"> </path> <path d="M190.2826,73.6308 L167.4206,188.8978 C167.4206,188.8978 164.2236,196.8918 155.4306,193.0548 L102.6726,152.6068 L83.4886,143.3348 L51.1946,132.4628 C51.1946,132.4628 46.2386,130.7048 45.7586,126.8678 C45.2796,123.0308 51.3546,120.9528 51.3546,120.9528 L179.7306,70.5928 C179.7306,70.5928 190.2826,65.9568 190.2826,73.6308" fill="#FFFFFF"> </path> <path d="M98.6178,187.6035 C98.6178,187.6035 97.0778,187.4595 95.1588,181.3835 C93.2408,175.3085 83.4888,143.3345 83.4888,143.3345 L161.0258,94.0945 C161.0258,94.0945 165.5028,91.3765 165.3428,94.0945 C165.3428,94.0945 166.1418,94.5735 163.7438,96.8115 C161.3458,99.0505 102.8328,151.6475 102.8328,151.6475" fill="#D2E5F1"> </path> <path d="M122.9015,168.1154 L102.0335,187.1414 C102.0335,187.1414 100.4025,188.3794 98.6175,187.6034 L102.6135,152.2624" fill="#B5CFE4"> </path> </g> </g></svg> -->
+                      <svg
+                        class="w-5 h-5 me-2 md:w-10 md:h-10"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <rect
+                            x="2"
+                            y="2"
+                            width="28"
+                            height="28"
+                            rx="6"
+                            fill="url(#paint0_radial_87_7153)"
+                          ></rect>
+                          <rect
+                            x="2"
+                            y="2"
+                            width="28"
+                            height="28"
+                            rx="6"
+                            fill="url(#paint1_radial_87_7153)"
+                          ></rect>
+                          <rect
+                            x="2"
+                            y="2"
+                            width="28"
+                            height="28"
+                            rx="6"
+                            fill="url(#paint2_radial_87_7153)"
+                          ></rect>
+                          <path
+                            d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z"
+                            fill="white"
+                          ></path>
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z"
+                            fill="white"
+                          ></path>
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z"
+                            fill="white"
+                          ></path>
+                          <defs>
+                            <radialGradient
+                              id="paint0_radial_87_7153"
+                              cx="0"
+                              cy="0"
+                              r="1"
+                              gradientUnits="userSpaceOnUse"
+                              gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)"
+                            >
+                              <stop stop-color="#B13589"></stop>
+                              <stop
+                                offset="0.79309"
+                                stop-color="#C62F94"
+                              ></stop>
+                              <stop offset="1" stop-color="#8A3AC8"></stop>
+                            </radialGradient>
+                            <radialGradient
+                              id="paint1_radial_87_7153"
+                              cx="0"
+                              cy="0"
+                              r="1"
+                              gradientUnits="userSpaceOnUse"
+                              gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)"
+                            >
+                              <stop stop-color="#E0E8B7"></stop>
+                              <stop
+                                offset="0.444662"
+                                stop-color="#FB8A2E"
+                              ></stop>
+                              <stop
+                                offset="0.71474"
+                                stop-color="#E2425C"
+                              ></stop>
+                              <stop
+                                offset="1"
+                                stop-color="#E2425C"
+                                stop-opacity="0"
+                              ></stop>
+                            </radialGradient>
+                            <radialGradient
+                              id="paint2_radial_87_7153"
+                              cx="0"
+                              cy="0"
+                              r="1"
+                              gradientUnits="userSpaceOnUse"
+                              gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)"
+                            >
+                              <stop
+                                offset="0.156701"
+                                stop-color="#406ADC"
+                              ></stop>
+                              <stop
+                                offset="0.467799"
+                                stop-color="#6A45BE"
+                              ></stop>
+                              <stop
+                                offset="1"
+                                stop-color="#6A45BE"
+                                stop-opacity="0"
+                              ></stop>
+                            </radialGradient>
+                          </defs>
+                        </g>
+                      </svg>
+                      <h4 class="md:text-xl">INSTAGRAM</h4>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-white flex justify-between font-medium rounded-lg border hover:bg-gradient-to-r from-purple-500 to-pink-500 text-sm px-5 py-2.5 text-center items-center me-2 mb-2"
+                    >
+                      <!-- <svg class="w-10 h-10 me-2" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M128,0 C57.307,0 0,57.307 0,128 L0,128 C0,198.693 57.307,256 128,256 L128,256 C198.693,256 256,198.693 256,128 L256,128 C256,57.307 198.693,0 128,0 L128,0 Z" fill="#40B3E0"> </path> <path d="M190.2826,73.6308 L167.4206,188.8978 C167.4206,188.8978 164.2236,196.8918 155.4306,193.0548 L102.6726,152.6068 L83.4886,143.3348 L51.1946,132.4628 C51.1946,132.4628 46.2386,130.7048 45.7586,126.8678 C45.2796,123.0308 51.3546,120.9528 51.3546,120.9528 L179.7306,70.5928 C179.7306,70.5928 190.2826,65.9568 190.2826,73.6308" fill="#FFFFFF"> </path> <path d="M98.6178,187.6035 C98.6178,187.6035 97.0778,187.4595 95.1588,181.3835 C93.2408,175.3085 83.4888,143.3345 83.4888,143.3345 L161.0258,94.0945 C161.0258,94.0945 165.5028,91.3765 165.3428,94.0945 C165.3428,94.0945 166.1418,94.5735 163.7438,96.8115 C161.3458,99.0505 102.8328,151.6475 102.8328,151.6475" fill="#D2E5F1"> </path> <path d="M122.9015,168.1154 L102.0335,187.1414 C102.0335,187.1414 100.4025,188.3794 98.6175,187.6034 L102.6135,152.2624" fill="#B5CFE4"> </path> </g> </g></svg> -->
+                      <svg
+                        class="w-5 h-5 me-2 md:w-10 md:h-10"
+                        viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path
+                            fill="red"
+                            d="M14.712 4.633a1.754 1.754 0 00-1.234-1.234C12.382 3.11 8 3.11 8 3.11s-4.382 0-5.478.289c-.6.161-1.072.634-1.234 1.234C1 5.728 1 8 1 8s0 2.283.288 3.367c.162.6.635 1.073 1.234 1.234C3.618 12.89 8 12.89 8 12.89s4.382 0 5.478-.289a1.754 1.754 0 001.234-1.234C15 10.272 15 8 15 8s0-2.272-.288-3.367z"
+                          ></path>
+                          <path
+                            fill="#ffffff"
+                            d="M6.593 10.11l3.644-2.098-3.644-2.11v4.208z"
+                          ></path>
+                        </g>
+                      </svg>
+                      <h4 class="md:text-xl">YOUTUBE CHANNEL</h4>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <!-- <img class="w-[30rem]" src="img/shark.png" alt="" /> -->
+              </div>
+            </div>
+            <footer class="w-full">
+              <div class="mx-auto p-4 md:py-8">
+                <div class="sm:flex sm:items-center sm:justify-between">
+                  <a
+                    href="#"
+                    class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+                  >
+                    <!-- <img
+          src="https://flowbite.com/docs/images/logo.svg"
+          class="h-8"
+          alt="Flowbite Logo"
+        /> -->
+                    <span
+                      class="self-center text-white text-2xl font-semibold whitespace-nowrap"
+                      >$WHALE</span
+                    >
+                  </a>
+                  <ul
+                    class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-200 sm:mb-0"
+                  >
+                    <li>
+                      <a href="#section1" class="hover:underline me-4 md:me-6"
+                        >ROADMAP</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#section2" class="hover:underline me-4 md:me-6"
+                        >TOKENOMICS</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#section3" class="hover:underline me-4 md:me-6"
+                        >PRE-SALE</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#section4" class="hover:underline"
+                        >OUR RESOURCES</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+                <span class="block text-sm text-gray-200 sm:text-center"
+                  >© 2024 <a href="#" class="hover:underline">$WHALE™</a>. All
+                  Rights Reserved.</span
+                >
+              </div>
+            </footer>
+          </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </main>
     <script src="js/scroll.js"></script>
     <script src="js/timer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
