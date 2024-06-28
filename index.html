@@ -1020,124 +1020,187 @@
             <div
               class="flex justify-center items-center gap-5 flex-wrap w-full h-full md:my-auto md:gap-32"
             >
-              <div class="w-full px-2 md:w-[60rem]">
-                <div class="relative w-full overflow-x-auto">
-                  <table class="text-sm w-full text-left text-gray-300">
-                    <thead
-                      class="text-xs text-white uppercase bg-sky-700 md:text-base"
-                    >
+              <div class="px-2 w-full md:w-auto lg:w-auto">
+                <div
+                  data-popover-target="popover-default"
+                  class="relative overflow-x-auto"
+                >
+                  <table class="w-full text-sm text-left text-gray-300">
+                    <thead class="text-xs uppercase bg-sky-700 text-gray-200">
                       <tr>
-                        <th scope="col" class="px-6 py-3">Product name</th>
-                        <th scope="col" class="px-6 py-3">Color</th>
-                        <th scope="col" class="px-6 py-3">Category</th>
-                        <th scope="col" class="px-6 py-3">Price</th>
+                        <th scope="col" class="px-6 py-3 rounded-s-lg">
+                          Название
+                        </th>
+                        <th scope="col" class="px-12 py-3">Total</th>
+                        <th scope="col" class="px-6 py-3">%</th>
+                        <th scope="col" class="px-12 py-3">
+                          Initial unlock in tokens
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                          Initial unlock in %
+                        </th>
+                        <th scope="col" class="px-6 py-3">Cliff</th>
+                        <th scope="col" class="px-6 py-3 rounded-e-lg">
+                          Vesting
+                        </th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr
-                        class="border-b bg-sky-800 border-sky-600 hover:bg-sky-600"
-                      >
+                      <tr class="bg-sky-800 hover:bg-sky-900">
                         <th
                           scope="row"
-                          class="px-6 py-4 font-medium text-white whitespace-nowrap"
+                          class="px-6 py-4 font-semibold whitespace-nowrap text-white"
                         >
-                          Apple MacBook Pro 17"
+                          KOL round
                         </th>
-                        <td class="px-6 py-4">Silver</td>
-                        <td class="px-6 py-4">Laptop</td>
-                        <td class="px-6 py-4">$2999</td>
+                        <td class="px-6 py-4">900 000 000</td>
+                        <td class="px-6 py-4">9%</td>
+                        <td class="px-6 py-4">90 000 000</td>
+                        <td class="px-6 py-4">10%</td>
+                        <td class="px-6 py-4">1 мес.</td>
+                        <td class="px-6 py-4">0 мес.</td>
                       </tr>
-                      <tr
-                        class="border-b bg-sky-800 border-sky-600 hover:bg-sky-600"
-                      >
+                      <tr class="bg-sky-800 hover:bg-sky-900">
                         <th
                           scope="row"
-                          class="px-6 py-4 font-medium text-white whitespace-nowrap"
+                          class="px-6 py-4 font-semibold whitespace-nowrap text-white"
                         >
-                          Microsoft Surface Pro
+                          AirDrop initial
                         </th>
-                        <td class="px-6 py-4">White</td>
-                        <td class="px-6 py-4">Laptop PC</td>
-                        <td class="px-6 py-4">$1999</td>
+                        <td class="px-6 py-4">100 000 000</td>
+                        <td class="px-6 py-4">1%</td>
+                        <td class="px-6 py-4">20 000 000</td>
+                        <td class="px-6 py-4">20%</td>
+                        <td class="px-6 py-4">0 мес.</td>
+                        <td class="px-6 py-4">1 мес.</td>
                       </tr>
-                      <tr
-                        class="border-b bg-sky-800 border-sky-600 hover:bg-sky-600"
-                      >
+                      <tr class="bg-sky-800 hover:bg-sky-900">
                         <th
                           scope="row"
-                          class="px-6 py-4 font-medium text-white whitespace-nowrap"
+                          class="px-6 py-4 font-semibold whitespace-nowrap text-white"
                         >
-                          Magic Mouse 2
+                          IDO
                         </th>
-                        <td class="px-6 py-4">Black</td>
-                        <td class="px-6 py-4">Accessories</td>
-                        <td class="px-6 py-4">$99</td>
+                        <td class="px-6 py-4">25 000 000</td>
+                        <td class="px-6 py-4">0.25%</td>
+                        <td class="px-6 py-4">25 000 000</td>
+                        <td class="px-6 py-4">100%</td>
+                        <td class="px-6 py-4">0 мес.</td>
+                        <td class="px-6 py-4">0 мес.</td>
                       </tr>
-                      <tr
-                        class="border-b bg-sky-800 border-sky-600 hover:bg-sky-600"
-                      >
+                      <tr class="bg-sky-800 hover:bg-sky-900">
                         <th
                           scope="row"
-                          class="px-6 py-4 font-medium text-white whitespace-nowrap"
+                          class="px-6 py-4 font-semibold whitespace-nowrap text-white"
                         >
-                          Magic Mouse 2
+                          Partnership
                         </th>
-                        <td class="px-6 py-4">Black</td>
-                        <td class="px-6 py-4">Accessories</td>
-                        <td class="px-6 py-4">$99</td>
+                        <td class="px-6 py-4">500 000 000</td>
+                        <td class="px-6 py-4">5%</td>
+                        <td class="px-6 py-4">-</td>
+                        <td class="px-6 py-4">-</td>
+                        <td class="px-6 py-4">3 мес.</td>
+                        <td class="px-6 py-4">0 мес.</td>
                       </tr>
-                      <tr
-                        class="border-b bg-sky-800 border-sky-600 hover:bg-sky-600"
-                      >
+                      <tr class="bg-sky-800 hover:bg-sky-900">
                         <th
                           scope="row"
-                          class="px-6 py-4 font-medium text-white whitespace-nowrap"
+                          class="px-6 py-4 font-semibold whitespace-nowrap text-white"
                         >
-                          Magic Mouse 2
+                          Community
                         </th>
-                        <td class="px-6 py-4">Black</td>
-                        <td class="px-6 py-4">Accessories</td>
-                        <td class="px-6 py-4">$99</td>
+                        <td class="px-6 py-4">7 750 000 000</td>
+                        <td class="px-6 py-4">77.5%</td>
+                        <td class="px-6 py-4">155 000 000</td>
+                        <td class="px-6 py-4">20%</td>
+                        <td class="px-6 py-4">0 мес.</td>
+                        <td class="px-6 py-4">0 мес.</td>
                       </tr>
-                      <tr
-                        class="border-b bg-sky-800 border-sky-600 hover:bg-sky-600"
-                      >
+                      <tr class="bg-sky-800 hover:bg-sky-900">
                         <th
                           scope="row"
-                          class="px-6 py-4 font-medium text-white whitespace-nowrap"
+                          class="px-6 py-4 font-semibold whitespace-nowrap text-white"
                         >
-                          Magic Mouse 2
+                          Team
                         </th>
-                        <td class="px-6 py-4">Black</td>
-                        <td class="px-6 py-4">Accessories</td>
-                        <td class="px-6 py-4">$99</td>
+                        <td class="px-6 py-4">500 000 000</td>
+                        <td class="px-6 py-4">5%</td>
+                        <td class="px-6 py-4">-</td>
+                        <td class="px-6 py-4">-</td>
+                        <td class="px-6 py-4">3 мес.</td>
+                        <td class="px-6 py-4">0 мес.</td>
                       </tr>
-                      <tr
-                        class="border-b bg-sky-800 border-sky-600 hover:bg-sky-600"
-                      >
+                      <tr class="bg-sky-800 hover:bg-sky-900">
                         <th
                           scope="row"
-                          class="px-6 py-4 font-medium text-white whitespace-nowrap"
+                          class="px-6 py-4 font-semibold whitespace-nowrap text-white"
                         >
-                          Magic Mouse 2
+                          Marketing
                         </th>
-                        <td class="px-6 py-4">Black</td>
-                        <td class="px-6 py-4">Accessories</td>
-                        <td class="px-6 py-4">$99</td>
-                      </tr>
-                      <tr class="bg-sky-800 hover:bg-sky-600">
-                        <th
-                          scope="row"
-                          class="px-6 py-4 font-medium text-white whitespace-nowrap"
-                        >
-                          Magic Mouse 2
-                        </th>
-                        <td class="px-6 py-4">Black</td>
-                        <td class="px-6 py-4">Accessories</td>
-                        <td class="px-6 py-4">$99</td>
+                        <td class="px-6 py-4">225 000 000</td>
+                        <td class="px-6 py-4">2.25%</td>
+                        <td class="px-6 py-4">-</td>
+                        <td class="px-6 py-4">-</td>
+                        <td class="px-6 py-4">3 мес.</td>
+                        <td class="px-6 py-4">0 мес.</td>
                       </tr>
                     </tbody>
+                    <tfoot>
+                      <tr class="font-semibold text-white bg-sky-600">
+                        <th scope="row" class="px-6 py-3 text-base">Total</th>
+                        <td class="px-6 py-3">10 000 000 000</td>
+                        <td class="px-6 py-3">100%</td>
+                        <td class="px-6 py-3">290 000 000</td>
+                        <td class="px-6 py-3">2.9%</td>
+                        <td class="px-6 py-3">-</td>
+                        <td class="px-6 py-3">-</td>
+                      </tr>
+                    </tfoot>
                   </table>
+                </div>
+                <!-- <div
+                  id="tooltip-default"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 rounded-lg shadow-sm opacity-0 tooltip bg-sky-800"
+                >
+                  <h2 class="mb-2 text-lg font-semibold text-white">
+                    Заголовок списка:
+                  </h2>
+                  <ul
+                    class="max-w-md space-y-1 list-disc list-inside text-gray-300"
+                  >
+                    <li>IDO - public sale</li>
+                    <li>KOL round - ранние инвесторы</li>
+                    <li>Cliff - первичный разбор</li>
+                    <li>Vesting - распредение</li>
+                  </ul>
+
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div> -->
+                <div
+                  data-popover
+                  id="popover-default"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 rounded-lg shadow-sm opacity-0 tooltip bg-sky-800""
+                >
+                  <div
+                    class="px-3 py-2  border-b  rounded-t-lg border-sky-600 bg-sky-700"
+                  >
+                    <h3 class="font-semibold  text-white">
+                      Popover title
+                    </h3>
+                  </div>
+                  <div class="px-3 py-2">
+                    <ul
+                      class="max-w-md space-y-1 list-disc list-inside text-gray-300"
+                    >
+                      <li>IDO - public sale</li>
+                      <li>KOL round - ранние инвесторы</li>
+                      <li>Cliff - первичный разбор</li>
+                      <li>Vesting - распредение</li>
+                    </ul>
+                  </div>
+                  <div data-popper-arrow></div>
                 </div>
               </div>
               <!-- Chart -->
