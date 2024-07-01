@@ -8,12 +8,10 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <title>1Document</title>
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
+    <title>$WHALE</title>
+
   </head>
   <body class="" style="background-image: url('img/body.png')">
     <!-- Главный экран -->
@@ -348,11 +346,10 @@
                         </svg>
                       </a>
 
-                      <a
-                        href="#"
-                        class="hover:bg-gray-700 rounded-md p-1 md:p-2.5"
-                      >
-                        <svg
+                      <button type="button" 
+                        class="language-switcher ru text-white font-bold hover:bg-gray-700 rounded-md p-1 md:p-2.5"
+                      >EN
+                        <!-- <svg
                           class="w-6 h-6"
                           viewBox="0 0 64 64"
                           xmlns="http://www.w3.org/2000/svg"
@@ -383,8 +380,8 @@
                               fill="#428bc1"
                             ></path>
                           </g>
-                        </svg>
-                      </a>
+                        </svg> -->
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -434,6 +431,7 @@
                   <div
                     class="flex justify-center items-center md:hidden border-t w-60"
                   >
+                  
                     <a
                       href="#"
                       class="hover:bg-sky-700 rounded-md p-1 md:p-2.5"
@@ -475,6 +473,7 @@
                         </g>
                       </svg>
                     </a>
+                    
                     <a
                       href="#"
                       class="hover:bg-sky-700 rounded-md p-1 md:p-2.5"
@@ -597,6 +596,7 @@
                         </g>
                       </svg>
                     </a>
+                  
                     <a
                       href="#"
                       class="hover:bg-sky-700 rounded-md p-1 md:p-2.5"
@@ -751,8 +751,9 @@
                   </g>
                 </svg>
               </a>
-              <a href="#" class="hover:bg-sky-700 rounded-md p-1 md:p-2.5">
-                <svg
+              <button type="button" class="language-switcher ru hover:bg-sky-700 text-white font-bold rounded-md p-1 md:p-2.5">
+                EN
+                <!-- <svg
                   class="w-6 h-6"
                   viewBox="0 0 64 64"
                   xmlns="http://www.w3.org/2000/svg"
@@ -783,8 +784,8 @@
                       fill="#428bc1"
                     ></path>
                   </g>
-                </svg>
-              </a>
+                </svg> -->
+              </button>
             </div>
           </div>
         </nav>
@@ -802,7 +803,7 @@ data-rellax-speed="10">
       >
         $WHALE
       </h1>
-      <h4 class="text-2xl tracking-wide font-normal text-gray-100">
+      <h4 data-lang="deviz" class="text-2xl tracking-wide font-normal text-gray-100">
         Присоединяйся к стримам
       </h4>
     </div>
@@ -1211,50 +1212,35 @@ data-rellax-speed="10">
           <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
           <div class="font-sans leading-normal tracking-normal">
-            <canvas
-              class="w-full h-full text-white"
-              id="myChart"
-            ></canvas>
-
+            <canvas class="text-white w-96" id="pie-chart" ></canvas>
             <script>
-              var ctx = document
-                .getElementById("myChart")
-                .getContext("2d");
-              var myChart = new Chart(ctx, {
-                type: "pie",
+            Chart.defaults.color = '#f8fafc';
+            new Chart(document.getElementById("pie-chart"), {
+                
+                type: 'pie',
                 data: {
-                  labels: ["dfsdf", "Blue", "Yellow"],
-                  datasets: [
-                    {
-                      data: [30, 40, 20],
-                      backgroundColor: [
-                        "rgba(255, 99, 132, 0.7)",
-                        "rgba(54, 162, 235, 0.7)",
-                        "rgba(255, 206, 86, 0.7)",
-                      ],
-                      borderColor: [
-                        "rgba(255, 99, 132, 1)",
-                        "rgba(54, 162, 235, 1)",
-                        "rgba(255, 206, 86, 1)",
-                      ],
-                      borderWidth: 2,
-                    },
-                  ],
+                  labels: ["KOL round", "AirDrop initial ", "IDO ", "Partnership ", "Community ", "Team", "Marketing "],
+                  datasets: [{
+                    label: "%",
+                    backgroundColor: ["#ef4444", "#f97316","#fde047","#22c55e","#0ea5e9","#a855f7","#f472b6"],
+                    data: [9,1,0.25,5,77.5,5,2.25]
+                  }]
                 },
                 options: {
                   responsive: true,
-                  maintainAspectRatio: false,
                   legend: {
                     position: "bottom",
                     labels: {
-                      fontColor: "black",
+                      fontColor: "white",
                       fontSize: 14,
                       padding: 20,
                     },
                   },
-                },
-              });
+                  }
+                
+            });
             </script>
+            
           </div>
         </div>
       </div>
@@ -1908,6 +1894,7 @@ alt="Flowbite Logo"
   var rellax = new Rellax('.rellax');
 </script>
     <script src="js/scroll.js"></script>
+    <script src="js/traslates.js"></script>
     <script src="js/timer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   </body>
