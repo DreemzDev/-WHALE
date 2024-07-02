@@ -1,9 +1,13 @@
 {
-  "deviz": "Присоединяйся к стримам",
-  "proposal": "",
-  "your_result": "",
-  "feedback": "",
-  "blog": "",
-  "contacts": "Контакты",
-  "our_mission_main": "Наша миссия"
+  "HOME": "ДОМОЙ",
+  "ROADMAP": "РОАДМАП",
+  "TOKENOMICS": "ТОКЕНОМИКА",
+  "PRE-SALE": "ПРЕ-СЕИЛ",
+  "OUR_RESOURCES": "ДРУГИЕ РЕСУРСЫ",
+  "day": "ДНЕЙ",
+  "hours": "ЧАСОВ",
+  "minutes": "Минут",
+  "seconds": "Секунд",
+  "left_until_listing": "Осталось до листинга",
+  "play_now": "НАЧАТЬ ИГРАТЬ"
 }

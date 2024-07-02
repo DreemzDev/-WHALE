@@ -1,9 +1,13 @@
 {
-  "deviz": "Join the streams",
-  "proposal": "",
-  "your_result": "",
-  "feedback": "",
-  "blog": "",
-  "contacts": "",
-  "our_mission_main": ""
+  "HOME": "HOME",
+  "ROADMAP": "ROADMAP",
+  "TOKENOMICS": "TOKENOMICS",
+  "PRE-SALE": "PRE-SALE",
+  "OUR_RESOURCES": "OUR RESOURCES",
+  "day": "DAY",
+  "hours": "HOURS",
+  "minutes": "Minutes",
+  "seconds": "Seconds",
+  "left_until_listing": "left until isting",
+  "play_now": "PLAY NOW"
 }
