@@ -41,18 +41,18 @@
     translate.process();
   }
 
-  loadNewLang("en");
+  loadNewLang("ru");
 
   $(".language-switcher").on("click", function (e) {
     e.preventDefault();
     $(".preloader").removeAttr("style");
-    if ($(this).hasClass("ru")) {
-      $(this).toggleClass("ru en").text("EN");
-      loadNewLang("en");
-      ln_preloader();
-    } else if ($(this).hasClass("en")) {
+    if ($(this).hasClass("en")) {
       $(this).toggleClass("en ru").text("RU");
       loadNewLang("ru");
+      ln_preloader();
+    } else if ($(this).hasClass("ru")) {
+      $(this).toggleClass("ru en").text("EN");
+      loadNewLang("en");
       ln_preloader();
     }
   });

@@ -47,7 +47,7 @@ to {left:0;}
 
     <main
     
-      class=" md:w-full overflow-hidden w-full h-full bg-cover bg-top bg-[url('img/xs.png')] md:bg-[url('img/bg-final.png')] "
+      class=" md:w-full overflow-hidden w-full h-full bg-cover bg-top bg-[url('img/xs.png')] md:bg-[url('img/md.png')] lg:bg-[url('img/5000no.png')] "
       
     >
 
@@ -392,8 +392,8 @@ to {left:0;}
                       </a>
 
                       <button type="button"
-                        class="language-switcher en text-white font-bold hover:bg-gray-700 rounded-md p-1 md:p-2.5"
-                      >EN
+                        class="language-switcher ru text-white font-bold hover:bg-gray-700 rounded-md p-1 md:p-2.5"
+                      >RU
                         <!-- <svg
                           class="w-6 h-6"
                           viewBox="0 0 64 64"
@@ -442,7 +442,7 @@ to {left:0;}
                     href="#"
                     class="block py-2 px-3 text-white rounded hover:text-sky-500 md:hover:bg-transparent md:border-0 md:p-0"
                     aria-current="page"
-                    >HOME</a
+                    ></a
                   >
                 </li>
                 <li>
@@ -811,8 +811,8 @@ to {left:0;}
                   </g>
                 </svg>
               </a>
-              <button type="button" class="language-switcher en hover:bg-sky-700 text-white font-bold rounded-md p-1 md:p-2.5">
-                EN
+              <button type="button" class="language-switcher ru hover:bg-sky-700 text-white font-bold rounded-md p-1 md:p-2.5">
+                RU
                 <!-- <svg
                   class="w-6 h-6"
                   viewBox="0 0 64 64"
@@ -851,7 +851,7 @@ to {left:0;}
         </nav>
       </header>
           
-        <div class="main w-full hidden md:block lg:block">
+        <div class="main w-full hidden  lg:block">
           <div class="center ">
             <img class="left m-auto" src="img/cloud1.png" alt="">
             <img class="right m-auto" src="img/cloud2.png" alt="">
@@ -987,7 +987,7 @@ data-rellax-speed="6">
       <div id="section1">
         <h1
           data-lang="ROADMAP"
-          class="text-white text-5xl font-extrabold leading-none tracking-tight lg:text-9xl"
+          class=" text-transparent bg-clip-text bg-gradient-to-l to-gray-300 from-gray-100 text-5xl font-extrabold leading-none tracking-tight lg:text-9xl"
         >
           ROADMAP
         </h1>
@@ -998,12 +998,15 @@ data-rellax-speed="6">
           <div class="block p-6 rounded-xl shadow">
             <h1 class="mb-4 text-4xl font-extrabold text-white">
               <span
-                class="text-transparent bg-clip-text bg-gradient-to-r to-purple-600 from-pink-400"
+                data-lang="title_road_post1"
+                class="text-transparent bg-clip-text bg-gradient-to-l to-purple-600 from-pink-400"
                 >Начало пути</span
               >
               
             </h1>
-            <p class="text-xl font-normal text-gray-200 md:text-2xl">
+            <p
+            data-lang="content_road_post1"
+            class="text-xl font-normal text-gray-200 md:text-2xl">
               Представление пользователям проекта WHALE, запуск приложения проекта и старт его развития, вовлечение сторонников, поощрение активных пользователей.
             </p>
           </div>
@@ -1015,12 +1018,15 @@ data-rellax-speed="6">
           <div class="block p-6 rounded-xl shadow">
             <h1 class="mb-4 text-4xl font-extrabold text-white">
               <span
-                class="text-transparent bg-clip-text bg-gradient-to-r to-purple-600 from-pink-400"
+                data-lang="title_road_post2"
+                class="text-transparent bg-clip-text bg-gradient-to-l to-purple-600 from-pink-400"
                 >Первые шаги</span
               >
               
             </h1>
-            <p class="font-normal text-gray-200 text-xl md:text-2xl">
+            <p
+            data-lang="content_road_post2" 
+            class="font-normal text-gray-200 text-xl md:text-2xl">
               Введение новых механик в приложение проекта, расширяющих возможности маленьких WHALES по осваиванию морей и океанов.
             </p>
           </div>
@@ -1031,12 +1037,15 @@ data-rellax-speed="6">
           <div class="block p-6 rounded-xl shadow">
             <h1 class="mb-4 text-4xl font-extrabold text-white">
               <span
-                class="text-transparent bg-clip-text bg-gradient-to-r to-purple-600 from-pink-400"
+                data-lang="title_road_post3"
+                class="text-transparent bg-clip-text bg-gradient-to-l to-purple-600 from-pink-400"
                 >Покорение ближайших акваторий</span
               >
               
             </h1>
-            <p class="font-normal text-xl text-gray-200 md:text-2xl">
+            <p
+            data-lang="content_road_post3" 
+            class="font-normal text-xl text-gray-200 md:text-2xl">
               Представление WHALE в нейтральных рыночных водах, наполнение нашего бассейна ликвидностью, подпитка семейства запасенным планктоном и возможность запастись самим.
             </p>
           </div>
@@ -1047,12 +1056,15 @@ data-rellax-speed="6">
           <div class="block p-6 rounded-xl shadow">
             <h1 class="mb-4 text-4xl font-extrabold text-white">
               <span
-                class="text-transparent bg-clip-text bg-gradient-to-r to-purple-600 from-pink-400"
+                data-lang="title_road_post4"
+                class="text-transparent bg-clip-text bg-gradient-to-l to-purple-600 from-pink-400"
                 >Китовые подарки</span
               >
               
             </h1>
-            <p class="font-normal text-gray-200 text-xl md:text-2xl">
+            <p
+            data-lang="content_road_post4" 
+            class="font-normal text-gray-200 text-xl md:text-2xl">
               Собрание сообщества WHALE в своих комфортных водоемах для празднования взросления проекта с проведением розыгрышей, конкурсов и других активностей.
             </p>
           </div>
@@ -1063,12 +1075,15 @@ data-rellax-speed="6">
           <div class="block p-6 rounded-xl shadow">
             <h1 class="mb-4 text-4xl font-extrabold text-white">
               <span
-                class="text-transparent bg-clip-text bg-gradient-to-r to-purple-600 from-pink-400"
+                data-lang="title_road_post5"
+                class="text-transparent bg-clip-text bg-gradient-to-l to-purple-600 from-pink-400"
                 >Исследование мирового океана</span
               >
               
             </h1>
-            <p class="font-normal text-gray-200 text-xl md:text-2xl">
+            <p
+            data-lang="content_road_post5" 
+            class="font-normal text-gray-200 text-xl md:text-2xl">
               Подготовка WHALES для путешествия по стремительному течению к смене ареола обитания, проведение международной китовой онлайн конференции.
             </p>
           </div>
@@ -1079,12 +1094,15 @@ data-rellax-speed="6">
           <div class="block p-6 rounded-xl shadow">
             <h1 class="mb-4 text-4xl font-extrabold text-white">
               <span
-                class="text-transparent bg-clip-text bg-gradient-to-r to-purple-600 from-pink-400"
+                data-lang="title_road_post6"
+                class="text-transparent bg-clip-text bg-gradient-to-l to-purple-600 from-pink-400"
                 >Смена ареола обитания</span
               >
               
             </h1>
-            <p class="font-normal text-xl text-gray-200 md:text-2xl">
+            <p
+            data-lang="content_road_post6"  
+            class="font-normal text-xl text-gray-200 md:text-2xl">
               Развитие семейства WHALES в глобальных водах мирового tier-1 океана, использование предоставляемых инструментов для развития проекта.
             </p>
           </div>
@@ -1095,12 +1113,15 @@ data-rellax-speed="6">
           <div class="block p-6 rounded-xl shadow">
             <h1 class="mb-4 text-4xl font-extrabold text-white">
               <span
-                class="text-transparent bg-clip-text bg-gradient-to-r to-purple-600 from-pink-400"
+                data-lang="title_road_post7"
+                class="text-transparent bg-clip-text bg-gradient-to-l to-purple-600 from-pink-400"
                 >Возвращение к истокам</span
               >
               
             </h1>
-            <p class="font-normal text-gray-200 text-xl md:text-2xl ">
+            <p 
+            data-lang="content_road_post7" 
+            class="font-normal text-gray-200 text-xl md:text-2xl ">
               Благодарность вдохновителям проекта и другим обитателям водных глубин частью вырученных средств, распределение помощи в фонды голосованием каждого участника семьи WHALE посредством смарт-контрактов, подтверждение статуса WHALE как самого большого существа на нашей планете .
             </p>
           </div>
@@ -1111,12 +1132,15 @@ data-rellax-speed="6">
           <div class="block p-6 rounded-xl shadow">
             <h1 class="mb-4 text-4xl font-extrabold text-white">
               <span
-                class="text-transparent bg-clip-text bg-gradient-to-r to-purple-600 from-pink-400"
+                data-lang="title_road_post8"
+                class="text-transparent bg-clip-text bg-gradient-to-l to-purple-600 from-pink-400"
                 >Эволюция</span
               >
               
             </h1>
-            <p class="text-xl font-normal text-gray-200 md:text-2xl ">
+            <p 
+            data-lang="content_road_post8"
+            class="text-xl font-normal text-gray-200 md:text-2xl ">
               Выход за границы проекта, развитие системы прозрачных пожертвований для других направлений помощи нуждающимся, создание на основе семьи WHALE международного сообщества людей с добрыми сердцами, в котором каждый сможет обратить внимание общества на проблемы, предложить варианты их решения, найти сторонников и всем вместе сломать любую преграду на пути к счастливому будущему.
             </p>
           </div>
@@ -1134,7 +1158,7 @@ data-rellax-speed="6">
       <div id="section2">
         <h1
           data-lang="TOKENOMICS"
-          class="text-white text-5xl font-extrabold leading-none tracking-tight lg:text-9xl"
+          class="text-transparent bg-clip-text bg-gradient-to-l to-gray-300 from-gray-100 text-5xl font-extrabold leading-none tracking-tight lg:text-9xl"
         >
           TOKENOMICS
         </h1>
@@ -1353,7 +1377,7 @@ data-rellax-speed="6">
       <div id="section3">
         <h1
           data-lang="PRE-SALE"
-          class="text-white text-5xl font-extrabold leading-none tracking-tight lg:text-9xl"
+          class="text-transparent bg-clip-text bg-gradient-to-l to-gray-300 from-gray-100 text-5xl font-extrabold leading-none tracking-tight lg:text-9xl"
         >
           PRE-SALE
         </h1>
@@ -1399,7 +1423,7 @@ data-rellax-speed="6">
             href="https://www.donationalerts.com/r/whale_family"
             class="animate-bounce w-40 inline-flex lg:w-96 "
           >
-          <img src="img/butt.png" alt="">
+          <img class="w-64 lg:-ml-20" src="img/butt.png" alt="">
           </a>
         </div>
       </div>
@@ -1409,7 +1433,7 @@ data-rellax-speed="6">
       <div id="section4" class="my-6">
         <h1
           data-lang="OUR_RESOURCES"
-          class="text-white text-5xl text-center font-extrabold leading-none tracking-tight lg:text-9xl"
+          class="text-transparent bg-clip-text bg-gradient-to-l to-gray-300 from-gray-100 text-5xl text-center font-extrabold leading-none tracking-tight lg:text-9xl"
         >
           OUR RESOURCES
         </h1>
