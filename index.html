@@ -10,6 +10,7 @@
     <script async src="js/timer.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>$WHALE</title>
 <style>
@@ -40,6 +41,7 @@ from {left:-100%;}
 to {left:0;}
 }
 </style>
+
   </head>
   <body class="" style="background-image: url('img/body.png')">
     
@@ -134,12 +136,12 @@ to {left:0;}
                         >
                       </li>
                       <li>
-                        <a
+                        <button
+                          data-modal-target="pre-sale-modal" data-modal-toggle="pre-sale-modal"
                           data-lang="PRE-SALE"
                           data-modal-hide="top-left-modal"
-                          href="#section3"
                           class="block py-2 px-3 text-white rounded hover:text-sky-500"
-                          >PRE-SALE</a
+                          >PRE-SALE</button
                         >
                       </li>
                       <li>
@@ -462,11 +464,11 @@ to {left:0;}
                   >
                 </li>
                 <li>
-                  <a
+                  <button
+                    data-modal-target="pre-sale-modal" data-modal-toggle="pre-sale-modal"
                     data-lang="PRE-SALE"
-                    href="#section3"
                     class="block py-2 px-3 text-white rounded hover:text-sky-500 md:hover:bg-transparent md:border-0 md:p-0"
-                    >PRE-SALE</a
+                    >PRE-SALE</button
                   >
                 </li>
                 <li>
@@ -2012,6 +2014,7 @@ alt="Flowbite Logo"
     >
   </div>
 </footer>
+<!-- modal about -->
    <div id="about-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
       <div class="relative p-4 w-full max-w-2xl max-h-full">
           <!-- Modal content -->
@@ -2097,15 +2100,194 @@ Mass Adoption – предоставление возможности измен
           </div>
       </div>
   </div>
+
+  <!-- modal pre-sale -->
+  <div id="pre-sale-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+      <div class="relative p-4 w-full max-w-2xl max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-gray-800 rounded-lg shadow">
+              <!-- Modal header -->
+              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                  <h3 class="text-xl font-semibold text-white">
+                      PRE-SALE
+                  </h3>
+                  <button type="button" class="text-white bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center " data-modal-hide="pre-sale-modal">
+                      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                      </svg>
+                      <span class="sr-only">Close modal</span>
+                  </button>
+              </div>
+              <!-- Modal body -->
+              <div class="p-4 md:p-5 space-y-4">
+
+                  <p     
+                  class="text-base font-semibold leading-relaxed text-gray-300 ">
+                      Для участия в прессейле $WHL выберете удобный для Вас способ оплаты.
+                  </p>
+                  
+
+                  <h2 class="mb-2 text-base text-center font-semibold text-white">Минимальная сумма оплаты:</h2>
+                  <ul class="max-w-md mx-auto space-y-1 text-center  list-none list-inside text-gray-400">
+                      <li>
+                          TON - 2 TON
+                      </li>
+                      <li>
+                          NOT - 730 NOT
+                      </li>
+                      <li>
+                          USDT(TRC-20) - 12 USDT
+                      </li>
+                      <li>
+                          SOL - 0.08 SOL
+                      </li>
+
+                      <li>
+                          BNB (BEP-20) - 0.02 BNB
+                      </li>
+                      <li>
+                          ETHEREUM (ERC-20) - 0.035 ETH
+                      </li>
+                  </ul>
+                  <p     
+                  class="text-base font-semibold leading-relaxed text-gray-300 ">
+                  Примечание: проверьте правильность скопированной ссылки и выбирайте исключительно ту сеть,
+                  в которой собираетесь произвести оплату!
+                  </p>
+                  <!-- icon money -->
+                  <div
+                  id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist" 
+                  class="flex justify-around flex-wrap w-full " >
+                    <button class="flex flex-col justify-center items-center flex-shrink-0" id="ERC-20-tab" data-tabs-target="#ERC-20" type="button" role="tab" aria-controls="ERC-20" aria-selected="false">
+                      <img class="w-10 h-10" src="img/ETHEREUM (ERC-20).png" alt="ERC-20">
+                      <p>ERC-20</p>
+                    </button>
+                    <button class="flex flex-col justify-center items-center flex-shrink-0" id="TON-tab" data-tabs-target="#TON" type="button" role="tab" aria-controls="TON" aria-selected="false">
+                      <img class="w-10 h-10" src="img/ton.png" alt="TON">
+                      <p class="">TON</p>
+                    </button>
+                    <button class="flex flex-col justify-center items-center flex-shrink-0" id="TON2-tab" data-tabs-target="#TON2" type="button" role="tab" aria-controls="TON2" aria-selected="false">
+                      <img class="w-10 h-10 " src="img/NOT.png" alt="TON">
+                      <p >TON</p>
+                    </button>
+                    <button class="flex flex-col justify-center items-center flex-shrink-0" id="TRC-20-tab" data-tabs-target="#TRC-20" type="button" role="tab" aria-controls="TRC-20" aria-selected="false">
+                      <img class="w-10" src="img/USDT (TRC-20).png" alt="TRC-20">
+                      <p>TRC-20</p>
+                    </button>
+                    <button class="flex flex-col justify-center items-center flex-shrink-0" id="SOL-tab" data-tabs-target="#SOL" type="button" role="tab" aria-controls="SOL" aria-selected="false">
+                      <img class="w-10 h-10" src="img/SOL.png" alt="SOL">
+                      <p>SOL</p>
+                    </dbutton>
+                    <button class="flex flex-col justify-center items-center flex-shrink-0" id="BEP-20-tab" data-tabs-target="#BEP-20" type="button" role="tab" aria-controls="BEP-20" aria-selected="false">
+                      <img class="w-10 h-10" src="img/BNB.png" alt="BEP-20">
+                      <p>BEP-20</p>
+                    </button>
+                  </div>
+                  <div id="default-tab-content">
+                      <div class="hidden p-4  bg-gray-800" id="ERC-20" role="tabpanel" aria-labelledby="ERC-20-tab">
+                        <div class="relative  flex flex-col justify-between  rounded-lg ">
+                        <div x-data="{ input: 'Open', showMsg: false }" >              
+                            <div>
+                                <a type="button" @click="navigator.clipboard.writeText(input), showMsg = true, setTimeout(() => showMsg = false, 2000)" class="group inline-flex flex-col w-full items-center justify-center px-5 text-sm font-normal text-center text-white truncate rounded-xl cursor-copy">
+                                    <div x-show="showMsg" @click.away="showMsg = false" class="  z-20 max-w-sm overflow-hidden bg-green-600 mb-5 rounded-xl" style="display: none;">
+                                        <p class="p-0.5 flex items-center justify-center font-semibold text-green-50">Скопированно!</p>
+                                    </div>
+                                <button id="clipboard" class="relative bg-gray-700 rounded-lg px-1 py-2 cursor-copy text-sm font-lg">0xAfe17a046c4459630F47a769dad271DAD772bE46</button>
+  
+                                </a>
+            
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="hidden p-4  bg-gray-800" id="TON" role="tabpanel" aria-labelledby="TON-tab">
+                        <div class="relative  flex flex-col justify-between  rounded-lg ">
+                        <div x-data="{ input: 'Open', showMsg: false }" >              
+                            <div>
+                                <a type="button" @click="navigator.clipboard.writeText(input), showMsg = true, setTimeout(() => showMsg = false, 2000)" class="group inline-flex flex-col w-full items-center justify-center px-5 text-sm font-normal text-center text-white truncate rounded-xl cursor-copy">
+                                    <div x-show="showMsg" @click.away="showMsg = false" class="  z-20 max-w-sm overflow-hidden bg-green-600 mb-5 rounded-xl" style="display: none;">
+                                        <p class="p-0.5 flex items-center justify-center font-semibold text-green-50">Скопированно!</p>
+                                    </div>
+                                <button id="clipboard" class="relative bg-gray-700 rounded-lg px-1 py-2 cursor-copy text-sm font-lg">UQA8jClo16YcPfoeYmYwZKuboFMaAvgjHetTSfcFatcxa2or</button>
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="hidden p-4  bg-gray-800" id="TON2" role="tabpanel" aria-labelledby="TON2-tab">
+                        <div class="relative  flex flex-col justify-between  rounded-lg ">
+                        <div x-data="{ input: 'Open', showMsg: false }" >              
+                            <div>
+                                <a type="button" @click="navigator.clipboard.writeText(input), showMsg = true, setTimeout(() => showMsg = false, 2000)" class="group inline-flex flex-col w-full items-center justify-center px-5 text-sm font-normal text-center text-white truncate rounded-xl cursor-copy">
+                                    <div x-show="showMsg" @click.away="showMsg = false" class="  z-20 max-w-sm overflow-hidden bg-green-600 mb-5 rounded-xl" style="display: none;">
+                                        <p class="p-0.5 flex items-center justify-center font-semibold text-green-50">Скопированно!</p>
+                                    </div>
+                                <button id="clipboard" class="relative bg-gray-700 rounded-lg px-1 py-2 cursor-copy text-sm font-lg">UQCYF-7qC6hXdi_NKF09R17APqU8wQws3O-pRz8RlrzXGDLC</button>
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="hidden p-4  bg-gray-800" id="TRC-20" role="tabpanel" aria-labelledby="TRC-20-tab">
+                        <div class="relative  flex flex-col justify-between  rounded-lg ">
+                        <div x-data="{ input: 'Open', showMsg: false }" >              
+                            <div>
+                                <a type="button" @click="navigator.clipboard.writeText(input), showMsg = true, setTimeout(() => showMsg = false, 2000)" class="group inline-flex flex-col w-full items-center justify-center px-5 text-sm font-normal text-center text-white truncate rounded-xl cursor-copy">
+                                    <div x-show="showMsg" @click.away="showMsg = false" class="  z-20 max-w-sm overflow-hidden bg-green-600 mb-5 rounded-xl" style="display: none;">
+                                        <p class="p-0.5 flex items-center justify-center font-semibold text-green-50">Скопированно!</p>
+                                    </div>
+                                <button id="clipboard" class="relative bg-gray-700 rounded-lg px-1 py-2 cursor-copy text-sm font-lg">TXr9gjH8m8tTHgHRucQbVdNFuXRXgkp5NG</button>
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="hidden p-4  bg-gray-800" id="SOL" role="tabpanel" aria-labelledby="SOL-tab">
+                        <div class="relative  flex flex-col justify-between  rounded-lg ">
+                        <div x-data="{ input: 'Open', showMsg: false }" >              
+                            <div>
+                                <a type="button" @click="navigator.clipboard.writeText(input), showMsg = true, setTimeout(() => showMsg = false, 2000)" class="group inline-flex flex-col w-full items-center justify-center px-5 text-sm font-normal text-center text-white truncate rounded-xl cursor-copy">
+                                    <div x-show="showMsg" @click.away="showMsg = false" class="  z-20 max-w-sm overflow-hidden bg-green-600 mb-5 rounded-xl" style="display: none;">
+                                        <p class="p-0.5 flex items-center justify-center font-semibold text-green-50">Скопированно!</p>
+                                    </div>
+                                <button id="clipboard" class="relative bg-gray-700 rounded-lg px-1 py-2 cursor-copy text-sm font-lg">Hb7EZjN2XSMC3L82w33fdbck5cL3ihfJNZRLdsp7sttQ</button>
+                                </a>
+                            </div>
+                        </div>
+                        </div>  
+                      </div>
+                      <div class="hidden p-4  bg-gray-800" id="BEP-20" role="tabpanel" aria-labelledby="BEP-20-tab">
+                        <div class="relative  flex flex-col justify-between  rounded-lg ">
+                        <div x-data="{ input: 'Open', showMsg: false }" >              
+                            <div>
+                                <a type="button" @click="navigator.clipboard.writeText(input), showMsg = true, setTimeout(() => showMsg = false, 2000)" class="group inline-flex flex-col w-full items-center justify-center px-5 text-sm font-normal text-center text-white truncate rounded-xl cursor-copy">
+                                    <div x-show="showMsg" @click.away="showMsg = false" class="  z-20 max-w-sm overflow-hidden bg-green-600 mb-5 rounded-xl" style="display: none;">
+                                        <p class="p-0.5 flex items-center justify-center font-semibold text-green-50">Скопированно!</p>
+                                    </div>
+                                <button id="clipboard" class="relative bg-gray-700 rounded-lg px-1 py-2 cursor-copy text-sm font-lg">0x8432d02ebe5c99bda7ace3fca66a2da5ea53d9d2</button>
+                                </a>
+                            </div>
+                        </div>
+                        </div>  
+                      </div>
+                  </div>
+
+
+              </div>
+
+          </div>
+      </div>
+  </div>
     </main>
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 <script>
   // Accepts any class name
   var rellax = new Rellax('.rellax');
 </script>
+
     <script src="js/scroll.js"></script>
     <script src="js/traslates.js"></script>
-    
+  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   </body>
 </html>
