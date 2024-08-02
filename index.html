@@ -136,12 +136,12 @@ to {left:0;}
                         >
                       </li>
                       <li>
-                        <button
-                          data-modal-target="pre-sale-modal" data-modal-toggle="pre-sale-modal"
+                        <a
+                          href="#section3"
                           data-lang="PRE-SALE"
                           data-modal-hide="top-left-modal"
                           class="block py-2 px-3 text-white rounded hover:text-sky-500"
-                          >PRE-SALE</button
+                          >PRE-SALE</a
                         >
                       </li>
                       <li>
@@ -396,38 +396,7 @@ to {left:0;}
                       <button type="button"
                         class="language-switcher ru text-white font-bold hover:bg-gray-700 rounded-md p-1 md:p-2.5"
                       >RU
-                        <!-- <svg
-                          class="w-6 h-6"
-                          viewBox="0 0 64 64"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                          aria-hidden="true"
-                          role="img"
-                          class="iconify iconify--emojione"
-                          preserveAspectRatio="xMidYMid meet"
-                          fill="#000000"
-                        >
-                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                          <g
-                            id="SVGRepo_tracerCarrier"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          ></g>
-                          <g id="SVGRepo_iconCarrier">
-                            <path
-                              d="M31.9 2c-13 0-24.1 8.4-28.2 20h56.6C56.1 10.4 45 2 31.9 2z"
-                              fill="#f9f9f9"
-                            ></path>
-                            <path
-                              d="M31.9 62c13.1 0 24.2-8.4 28.3-20H3.7c4.1 11.7 15.2 20 28.2 20z"
-                              fill="#ed4c5c"
-                            ></path>
-                            <path
-                              d="M3.7 22C2.6 25.1 2 28.5 2 32s.6 6.9 1.7 10h56.6c1.1-3.1 1.7-6.5 1.7-10s-.6-6.9-1.7-10H3.7"
-                              fill="#428bc1"
-                            ></path>
-                          </g>
-                        </svg> -->
+   
                       </button>
                     </div>
                   </div>
@@ -464,11 +433,11 @@ to {left:0;}
                   >
                 </li>
                 <li>
-                  <button
-                    data-modal-target="pre-sale-modal" data-modal-toggle="pre-sale-modal"
+                  <a
+                    href="#section3"
                     data-lang="PRE-SALE"
                     class="block py-2 px-3 text-white rounded hover:text-sky-500 md:hover:bg-transparent md:border-0 md:p-0"
-                    >PRE-SALE</button
+                    >PRE-SALE</a
                   >
                 </li>
                 <li>
@@ -1317,8 +1286,10 @@ data-rellax-speed="6">
             <div
               class="px-3 py-2  border-b  rounded-t-lg border-sky-600 bg-sky-700"
             >
-              <h3 class="font-semibold  text-white">
-                Popover title
+              <h3
+              data-lang="popover_title" 
+              class="font-semibold  text-white">
+                Справка по таблице
               </h3>
             </div>
             <div class="px-3 py-2">
@@ -1396,41 +1367,27 @@ data-rellax-speed="6">
           <p 
           data-lang="content_pre-sale2"
           class="lg:max-w-[70rem]">Cтановись с нами огромным китом</p>
-          <!-- <h1 class="py-8 lg:py-10">want to</h1>
-          <h1>start listing?</h1> -->
-        </div>
-        <!-- mobile button -->
-        <!-- <div class="lg:block lg:flex-1 md:text-center">
-          <a
-            href="https://www.donationalerts.com/r/whale_family"
-            class="animate-bounce inline-flex w-56 font-semibold rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 hover:animate-none ounded-2xl text-2xl items-center justify-center px-5 py-4 text-center text-white focus:ring-4 focus:ring-blue-900"
-            >DONATION
-            <svg
-              class="w-8 h-8 ms-3"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
-              />
-            </svg>
-          </a>
 
-        </div> -->
+        </div>
+
         <!-- PC button -->
-        <div class="md:text-center lg:block lg:flex-1">
+        <div class="md:text-center mx-auto  lg:flex-1 lg:flex lg:flex-nowrap lg:items-center lg:flex-shrink-0 lg:gap-5  ">
           <a
             href="https://www.donationalerts.com/r/whale_family"
-            class="animate-bounce w-40 inline-flex lg:w-96 "
+            class=" w-40 h-40  inline-flex justify-center items-center flex-col lg:w-56 lg:h-56 "
           >
-          <img class="w-64 lg:-ml-20" src="img/butt.png" alt="">
+          <h4 class="text-white text-3xl lg:text-6xl font-medium mb-2 ">DA</h4>
+          <img class="w-64 shrink-0 " src="img/da.png" alt="">
           </a>
+          <button
+            data-modal-target="pre-sale-modal" data-modal-toggle="pre-sale-modal"
+            data-modal-hide="top-left-modal"
+            class=" w-44 h-44 inline-flex justify-center items-center flex-col lg:w-60 lg:h-60"
+          >
+          <h4 class="text-white text-3xl lg:text-6xl font-medium mb-2 ">КРИПТА</h4>
+          <img class="flex w-64 " src="img/whale.png" alt="">
+          </button>
+
         </div>
       </div>
     </div>
@@ -1447,7 +1404,7 @@ data-rellax-speed="6">
       <div
         class="flex w-full justify-center  items-center  md:px-0"
       >
-      <!-- class="hidden justify-normal flex-wrap my-24  gap-5 items-center  lg:flex md:px-0" -->
+      
         <div
           class="hidden grid-cols-4 my-24 gap-5 lg:grid px-2"
         >
@@ -1456,22 +1413,25 @@ data-rellax-speed="6">
             class="max-w-sm group group transition ease-in-out delay-150 hover:bg-sky-800 duration-300 border rounded-lg shadow bg-gray-800 border-gray-700"
           >
             <a href="#">
-              <img class="rounded-t-lg" src="img/tegram.png" alt="" />
+              <img class="rounded-t-lg" src="img/telegram.jpg" alt="" />
             </a>
             <div class="p-5">
               <a href="#">
                 <h5
+                  data-lang="tg_title"
                   class="mb-2 text-2xl font-bold group-hover:text-white tracking-tight text-gray-100"
                 >
                   Наш TELEGRAM канал
                 </h5>
               </a>
               <p
+                data-lang="tg_blog"
                 class="mb-3 font-normal transition ease-in-out delay-150 group-hover:text-white text-gray-400"
               >
                 Следите за нашими новостями в Telegram
               </p>
               <a
+                data-lang="tg_button"
                 href="#"
                 class="inline-flex transition ease-in-out delay-150 group-hover:bg-gray-800 items-center px-3 py-2 text-sm font-medium text-center text-white bg-sky-700 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-800"
               >
@@ -1501,24 +1461,27 @@ data-rellax-speed="6">
             <a href="#">
               <img
                 class="rounded-t-lg"
-                src="img/trafik-na-telegram-kanal.jpg"
+                src="img/game.jpg"
                 alt=""
               />
             </a>
             <div class="p-5">
               <a href="#">
                 <h5
+                  data-lang="game_title"
                   class="mb-2 text-2xl font-bold tracking-tight text-white"
                 >
                   $WHALE GAME BOT
                 </h5>
               </a>
               <p
+                data-lang="game_blog"
                 class="mb-3 font-normal transition ease-in-out delay-150 group-hover:text-white text-gray-400"
               >
                 Присоединяйся к нашей игре в Telegram
               </p>
               <a
+                data-lang="game_button"
                 href="#"
                 class="inline-flex transition ease-in-out delay-150 group-hover:bg-gray-800 items-center px-3 py-2 text-sm font-medium text-center text-white bg-sky-700 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-800"
               >
@@ -1546,22 +1509,25 @@ data-rellax-speed="6">
             class="max-w-sm group group transition ease-in-out delay-150 hover:bg-sky-800 duration-300 border rounded-lg shadow bg-gray-800 border-gray-700"
           >
             <a href="#">
-              <img class="rounded-t-lg" src="img/instagram2.gif" alt="" />
+              <img class="rounded-t-lg" src="img/instagram.jpg" alt="" />
             </a>
             <div class="p-5">
               <a href="#">
                 <h5
+                  data-lang="instagram_title"
                   class="mb-2 text-2xl font-bold tracking-tight text-white"
                 >
                   Наш INSTAGRAM блог
                 </h5>
               </a>
               <p
+                data-lang="instagram_blog"
                 class="mb-3 font-normal transition ease-in-out delay-150 group-hover:text-white text-gray-400"
               >
                 Следите за нашими новостями в INSTAGRAM
               </p>
               <a
+                data-lang="instagram_button"
                 href="#"
                 class="inline-flex transition ease-in-out delay-150 group-hover:bg-gray-800 items-center px-3 py-2 text-sm font-medium text-center text-white bg-sky-700 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-800"
               >
@@ -1589,22 +1555,25 @@ data-rellax-speed="6">
             class="max-w-sm group group transition ease-in-out delay-150 hover:bg-sky-800 duration-300 border rounded-lg shadow bg-gray-800 border-gray-700"
           >
             <a href="#">
-              <img class="rounded-t-lg" src="img/tube2.jpg" alt="" />
+              <img class="rounded-t-lg" src="img/youtube.jpg" alt="" />
             </a>
             <div class="p-5">
               <a href="#">
                 <h5
+                  data-lang="youtube_title"
                   class="mb-2 text-2xl font-bold tracking-tight text-white"
                 >
                   Наш YOUTUBE канал
                 </h5>
               </a>
               <p
+                data-lang="youtube_blog"
                 class="mb-3 font-normal transition ease-in-out delay-150 group-hover:text-white text-gray-400"
               >
                 Присоединяйся к нам на YOUTUBE
               </p>
               <a
+                data-lang="youtube_button"
                 href="#"
                 class="inline-flex transition ease-in-out delay-150 group-hover:bg-gray-800 items-center px-3 py-2 text-sm font-medium text-center text-white bg-sky-700 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-800"
               >
@@ -2021,7 +1990,7 @@ alt="Flowbite Logo"
           <div class="relative bg-gray-800 rounded-lg shadow">
               <!-- Modal header -->
               <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
-                  <h3 class="text-xl font-semibold text-white">
+                  <h3 data-lang="About" class="text-xl font-semibold text-white">
                       О НАС
                   </h3>
                   <button type="button" class="text-white bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center " data-modal-hide="about-modal">
@@ -2035,65 +2004,14 @@ alt="Flowbite Logo"
               <div class="p-4 md:p-5 space-y-4">
                   <img src="img/bg-modal.jpg" alt="">
                   <p 
-                  data-lang="content_about"
-                  class="text-base leading-relaxed text-gray-300 ">
-                      При создании проекта WHALE основной идеей стало желание изменить как мир вокруг нас, так и мир каждого человека, сотворив единый инструмент для получения прибыли его участниками и, опционно, распределения любой ее доли на благие дела. Разработанный для этих целей токен $WHALE подразумевает создание сообщества, члены которого путем использования смарт-контрактов по желанию смогут распределить часть накопленных средств по выбранным ими благотворительным организациям. Криптовалюта позволяет добиться этого быстрее, безопаснее и выгоднее за счет уменьшения трат на комиссии и налоги, а mass-adoption-приложение в мессенджере Telegram создает комфортную среду для резонанса биений добрых сердец. Создай свое будущее – join to the stream!
-                  </p>
-                  <!-- <p class="text-base leading-relaxed text-gray-300 ">
-                      Проект WHALE создан с целью привлечь внимание общества к проблемам сохранения природы нашей планеты, объединить сторонников экологичного будущего в большую семью, готовую прийти на помощь нуждающимся, дать возможность каждому члену семьи участвовать в управлении проектом посредством голосования и показать, насколько эффективно можно использовать криптовалюту для этого. Нельзя сказать, что мир криптовалюты настолько же поразителен и необъятен как мировой океан, однако WHALE способен показать прозрачность, недоступную никаким водам.
-                  </p>
-                  <p class="text-base leading-relaxed text-gray-300 ">
-                      Использование криптовалюты в качестве способа финансирования благотворительных фондов позволяет не только убедиться в том, что пожертвованные средства потрачены по назначению, но и сокращает количество средств, потраченных на комиссию и налоги. Это означает, что за меньшее время переводов и бóльшим ресурсом мы сможем менять мир к лучшему!
-                  </p>
-                  <p class="text-base leading-relaxed text-gray-300 ">
-                    Проект предполагает разработку приложения в мессенджере Telegram (Telegram Web App – TWA), создание своей криптовалюты, ее размещение на DEX и CEX биржи и предоставление возможности ее использование для улучшения окружающего нас мира
-                  </p>
-                   -->
-
-<!-- <h2 class="mb-2 text-lg font-semibold  text-white">Китовые принципы:</h2>
-<ul class="w-full space-y-1  list-inside text-gray-400">
-    <li class="flex items-center">
-        <svg class="w-3.5 h-3.5 me-2  text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-         </svg>
-        Прозрачность – любой член семьи, сделавший пожертвование, может в реальном времени видеть путь, проложенный его сердцем к добрым делам
-    </li>
-    <li class="flex items-center">
-        <svg class="w-3.5 h-3.5 me-2  text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-         </svg>
-        
-Значимость каждого – распределение средств проекта происходит путем голосования WHALES при помощи смарт-контрактов
-
-    </li>
-    <li class="flex items-center">
-        <svg class="w-3.5 h-3.5 me-2  text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-         </svg>
-        
-Больше пользы – увеличение объёма средств, потраченных на спасение природы, за счет уменьшение затрат членов семьи
-
-
-    </li>
-        <li class="flex items-center">
-        <svg class="w-3.5 h-3.5 me-2  text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-         </svg>
-        
-Mass Adoption – предоставление возможности изменить этот мир каждому желающему
-
-    </li>
-            <li class="flex items-center">
-        <svg class="w-3.5 h-3.5 me-2  text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-         </svg>
-        
-Вовлеченность – поощрение 
-
-    </li>
-</ul> -->
-
-
+                  data-lang="content_about1"
+                  class="text-base leading-relaxed text-gray-300 "></p>
+                  <p
+                  data-lang="content_about2"
+                  class="text-base leading-relaxed text-gray-300 "></p>
+                  <p
+                  data-lang="content_about3"
+                  class="text-base leading-relaxed text-gray-300 "></p>
 
               </div>
 
@@ -2121,13 +2039,16 @@ Mass Adoption – предоставление возможности измен
               <!-- Modal body -->
               <div class="p-4 md:p-5 space-y-4">
 
-                  <p     
+                  <p 
+                  data-lang="modal_content_pre-sale1"    
                   class="text-base font-semibold leading-relaxed text-gray-300 ">
                       Для участия в прессейле $WHL выберете удобный для Вас способ оплаты.
                   </p>
                   
 
-                  <h2 class="mb-2 text-base text-center font-semibold text-white">Минимальная сумма оплаты:</h2>
+                  <h2
+                  data-lang="modal_content_pre-sale2"  
+                  class="mb-2 text-base text-center font-semibold text-white">Минимальная сумма оплаты:</h2>
                   <ul class="max-w-md mx-auto space-y-1 text-center  list-none list-inside text-gray-400">
                       <li>
                           TON - 2 TON
@@ -2149,7 +2070,8 @@ Mass Adoption – предоставление возможности измен
                           ETHEREUM (ERC-20) - 0.035 ETH
                       </li>
                   </ul>
-                  <p     
+                  <p 
+                  data-lang="modal_content_pre-sale3"     
                   class="text-base font-semibold leading-relaxed text-gray-300 ">
                   Примечание: проверьте правильность скопированной ссылки и выбирайте исключительно ту сеть,
                   в которой собираетесь произвести оплату!
@@ -2160,31 +2082,31 @@ Mass Adoption – предоставление возможности измен
                   class="flex justify-around flex-wrap w-full " >
                     <button class="flex flex-col justify-center items-center flex-shrink-0" id="ERC-20-tab" data-tabs-target="#ERC-20" type="button" role="tab" aria-controls="ERC-20" aria-selected="false">
                       <img class="w-10 h-10" src="img/ETHEREUM (ERC-20).png" alt="ERC-20">
-                      <p>ERC-20</p>
+                      <p class="text-xs md:text-base">ERC-20</p>
                     </button>
                     <button class="flex flex-col justify-center items-center flex-shrink-0" id="TON-tab" data-tabs-target="#TON" type="button" role="tab" aria-controls="TON" aria-selected="false">
                       <img class="w-10 h-10" src="img/ton.png" alt="TON">
-                      <p class="">TON</p>
+                      <p class="text-xs md:text-base">TON</p>
                     </button>
                     <button class="flex flex-col justify-center items-center flex-shrink-0" id="TON2-tab" data-tabs-target="#TON2" type="button" role="tab" aria-controls="TON2" aria-selected="false">
                       <img class="w-10 h-10 " src="img/NOT.png" alt="TON">
-                      <p >TON</p>
+                      <p class="text-xs md:text-base">TON</p>
                     </button>
                     <button class="flex flex-col justify-center items-center flex-shrink-0" id="TRC-20-tab" data-tabs-target="#TRC-20" type="button" role="tab" aria-controls="TRC-20" aria-selected="false">
                       <img class="w-10" src="img/USDT (TRC-20).png" alt="TRC-20">
-                      <p>TRC-20</p>
+                      <p class="text-xs md:text-base">TRC-20</p>
                     </button>
                     <button class="flex flex-col justify-center items-center flex-shrink-0" id="SOL-tab" data-tabs-target="#SOL" type="button" role="tab" aria-controls="SOL" aria-selected="false">
                       <img class="w-10 h-10" src="img/SOL.png" alt="SOL">
-                      <p>SOL</p>
+                      <p class="text-xs md:text-base">SOL</p>
                     </dbutton>
                     <button class="flex flex-col justify-center items-center flex-shrink-0" id="BEP-20-tab" data-tabs-target="#BEP-20" type="button" role="tab" aria-controls="BEP-20" aria-selected="false">
                       <img class="w-10 h-10" src="img/BNB.png" alt="BEP-20">
-                      <p>BEP-20</p>
+                      <p class="text-xs md:text-base">BEP-20</p>
                     </button>
                   </div>
                   <div id="default-tab-content">
-                      <div class="hidden p-4  bg-gray-800" id="ERC-20" role="tabpanel" aria-labelledby="ERC-20-tab">
+                      <div class="hidden p-0 md:p-4  bg-gray-800" id="ERC-20" role="tabpanel" aria-labelledby="ERC-20-tab">
                         <div class="relative  flex flex-col justify-between  rounded-lg ">
                         <div x-data="{ input: 'Open', showMsg: false }" >              
                             <div>
@@ -2200,7 +2122,7 @@ Mass Adoption – предоставление возможности измен
                         </div>
                         </div>
                       </div>
-                      <div class="hidden p-4  bg-gray-800" id="TON" role="tabpanel" aria-labelledby="TON-tab">
+                      <div class="hidden p-0 md:p-4  bg-gray-800" id="TON" role="tabpanel" aria-labelledby="TON-tab">
                         <div class="relative  flex flex-col justify-between  rounded-lg ">
                         <div x-data="{ input: 'Open', showMsg: false }" >              
                             <div>
@@ -2214,7 +2136,7 @@ Mass Adoption – предоставление возможности измен
                         </div>
                         </div>
                       </div>
-                      <div class="hidden p-4  bg-gray-800" id="TON2" role="tabpanel" aria-labelledby="TON2-tab">
+                      <div class="hidden p-0 md:p-4  bg-gray-800" id="TON2" role="tabpanel" aria-labelledby="TON2-tab">
                         <div class="relative  flex flex-col justify-between  rounded-lg ">
                         <div x-data="{ input: 'Open', showMsg: false }" >              
                             <div>
@@ -2228,7 +2150,7 @@ Mass Adoption – предоставление возможности измен
                         </div>
                         </div>
                       </div>
-                      <div class="hidden p-4  bg-gray-800" id="TRC-20" role="tabpanel" aria-labelledby="TRC-20-tab">
+                      <div class="hidden p-0 md:p-4  bg-gray-800" id="TRC-20" role="tabpanel" aria-labelledby="TRC-20-tab">
                         <div class="relative  flex flex-col justify-between  rounded-lg ">
                         <div x-data="{ input: 'Open', showMsg: false }" >              
                             <div>
@@ -2242,7 +2164,7 @@ Mass Adoption – предоставление возможности измен
                         </div>
                         </div>
                       </div>
-                      <div class="hidden p-4  bg-gray-800" id="SOL" role="tabpanel" aria-labelledby="SOL-tab">
+                      <div class="hidden p-0 md:p-4  bg-gray-800" id="SOL" role="tabpanel" aria-labelledby="SOL-tab">
                         <div class="relative  flex flex-col justify-between  rounded-lg ">
                         <div x-data="{ input: 'Open', showMsg: false }" >              
                             <div>
@@ -2256,7 +2178,7 @@ Mass Adoption – предоставление возможности измен
                         </div>
                         </div>  
                       </div>
-                      <div class="hidden p-4  bg-gray-800" id="BEP-20" role="tabpanel" aria-labelledby="BEP-20-tab">
+                      <div class="hidden p-0 md:p-4  bg-gray-800" id="BEP-20" role="tabpanel" aria-labelledby="BEP-20-tab">
                         <div class="relative  flex flex-col justify-between  rounded-lg ">
                         <div x-data="{ input: 'Open', showMsg: false }" >              
                             <div>

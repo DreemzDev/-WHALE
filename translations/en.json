@@ -30,8 +30,32 @@
   "title_road_post8": "Evolution",
   "content_road_post8": "Going beyond the boundaries of the project, developing a system of transparent donations for other areas of assistance to those in need, creating an international community of people with kind hearts based on the WHALE family, in which everyone will be able to draw society's attention to problems, offer solutions, find supporters and together break down any obstacle on the way to a happy future.",
 
+  "popover_title": "Help on the table",
+
   "content_pre-sale1": "Stop being a lonely fish.",
   "content_pre-sale2": "Become a huge whale with us",
 
-  "content_about": "When creating the WHALE project, the main idea was the desire to change both the world around us and the world of each person by creating a single tool for making profit for its participants and, optionally, distributing any share of it for good causes. The $WHALE token developed for these purposes implies the creation of a community, whose members, through the use of smart contracts, will be able to distribute part of the accumulated funds to their chosen charities. Cryptocurrency allows you to achieve this faster, safer and more profitable by reducing expenses on commissions and taxes, and the mass-adoption application in the Telegram messenger creates a comfortable environment for the resonance of the beats of kind hearts. Create your future – join to the stream!"
+  "tg_title": "Our TELEGRAM channel",
+  "tg_blog": "Follow our news on Telegram",
+  "tg_button": "Join us",
+
+  "game_title": "$WHALE GAME BOT",
+  "game_blog": "Join our Telegram game",
+  "game_button": "Play",
+
+  "instagram_title": "Наш INSTAGRAM блог",
+  "instagram_blog": "Следите за нашими новостями в INSTAGRAM",
+  "instagram_button": "Subscribe",
+
+  "youtube_title": "Our INSTAGRAM blog",
+  "youtube_blog": "Join us on YOUTUBE",
+  "youtube_button": "Subscribe",
+
+  "modal_content_pre-sale1": "To participate in the $WHL presale, choose a payment method that is convenient for you.",
+  "modal_content_pre-sale2": "Minimum payment amount:",
+  "modal_content_pre-sale3": "Note: check the correctness of the copied link and select only the network where you are going to make the payment!",
+
+  "content_about1": "When creating the WHALE project, the main idea was the desire to change both the world around us and the world of each person, creating a single tool for making profit for its participants and, optionally, distributing any share of it for good causes.",
+  "content_about2": "The $WHALE token developed for these purposes implies the creation of a community, whose members, through the use of smart contracts, will be able to distribute part of the accumulated funds to their chosen charities.",
+  "content_about3": "Cryptocurrency allows you to achieve this faster, safer and more profitable by reducing expenses on commissions and taxes, and the mass-adoption application in the Telegram messenger creates a comfortable environment for the resonance of the beats of kind hearts. Create your future – join to the stream!"
 }
