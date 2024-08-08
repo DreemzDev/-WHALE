@@ -1,5 +1,5 @@
 // count-down timer
-let dest = new Date("sept 25, 2024 10:00:00").getTime();
+let dest = new Date("april 07, 2025 00:00:00").getTime();
 let x = setInterval(function () {
   let now = new Date().getTime();
   let diff = dest - now;
