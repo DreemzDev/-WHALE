@@ -29,7 +29,6 @@
     </svg>
   </div>
     <!-- Главный экран -->
-
     <div class=" md:w-full overflow-hidden w-full h-full bg-cover bg-top bg-[url('img/xs.png')] md:bg-[url('img/md.png')] lg:bg-[url('img/5000no.png')] ">
       <header>
         <nav class="border-gray-200">
@@ -133,7 +132,6 @@
                           data-modal-target="about-modal" data-modal-toggle="about-modal"
                           data-lang="About"
                           data-modal-hide="top-left-modal"
-                          href="#"
                           class="block py-2 px-3 text-white rounded hover:text-sky-500"
                           >About</button
                         >
@@ -186,13 +184,13 @@
                           preserveAspectRatio="xMidYMid"
                           fill="#000000"
                         >
-                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g  stroke-width="0"></g>
                           <g
-                            id="SVGRepo_tracerCarrier"
+                            
                             stroke-linecap="round"
                             stroke-linejoin="round"
                           ></g>
-                          <g id="SVGRepo_iconCarrier">
+                          <g >
                             <g>
                               <path
                                 d="M128,0 C57.307,0 0,57.307 0,128 L0,128 C0,198.693 57.307,256 128,256 L128,256 C198.693,256 256,198.693 256,128 L256,128 C256,57.307 198.693,0 128,0 L128,0 Z"
@@ -226,13 +224,13 @@
                           xmlns="http://www.w3.org/2000/svg"
                           fill="#000000"
                         >
-                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g  stroke-width="0"></g>
                           <g
-                            id="SVGRepo_tracerCarrier"
+                            
                             stroke-linecap="round"
                             stroke-linejoin="round"
                           ></g>
-                          <g id="SVGRepo_iconCarrier">
+                          <g>
                             <g fill="none" fill-rule="evenodd">
                               <path
                                 d="M36,72 L36,72 C55.882251,72 72,55.882251 72,36 L72,36 C72,16.117749 55.882251,-3.65231026e-15 36,0 L36,0 C16.117749,3.65231026e-15 -2.4348735e-15,16.117749 0,36 L0,36 C2.4348735e-15,55.882251 16.117749,72 36,72 Z"
@@ -314,11 +312,8 @@
                                 gradientUnits="userSpaceOnUse"
                                 gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)"
                               >
-                                <stop stop-color="#B13589"></stop>
-                                <stop
-                                  offset="0.79309"
-                                  stop-color="#C62F94"
-                                ></stop>
+                                <stop stop-color = "#B13589"></stop>
+                                <stop offset = "0.79309" stop-color="#C62F94"></stop>
                                 <stop offset="1" stop-color="#8A3AC8"></stop>
                               </radialGradient>
                               <radialGradient
@@ -832,9 +827,9 @@
                 <div
                   class="rounded-xl bg-black/25 backdrop-blur-sm py-3 min-w-[76px] flex items-center justify-center flex-col gap-1 px-2 md:min-w-[96px] md:px-3"
                 >
-                  <h3
+                  <span
                     class="countdown-element minutes font-manrope font-semibold text-3xl text-white text-center"
-                  ></h3>
+                  ></span>
                   <p
                     data-lang="minutes"
                     class="text-lg fo uppercase text-white mt-1 text-center w-full"
@@ -848,9 +843,9 @@
                 <div
                   class="rounded-xl bg-black/25 backdrop-blur-sm py-3 min-w-[76px] flex items-center justify-center flex-col gap-1 px-2 md:min-w-[96px] md:px-3"
                 >
-                  <h3
+                  <span
                     class="countdown-element seconds font-manrope font-semibold text-3xl text-white text-center"
-                  ></h3>
+                  ></span>
                   <p
                     data-lang="seconds"
                     class="text-lg fo uppercase text-white mt-1 text-center w-full"
@@ -896,7 +891,6 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-6"
             >
               <path
                 stroke-linecap="round"
@@ -1561,7 +1555,7 @@
             data-popover
             id="popover-default"
             role="tooltip"
-            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 rounded-lg shadow-sm opacity-0 tooltip bg-sky-800""
+            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 rounded-lg shadow-sm opacity-0 tooltip bg-sky-800"
           >
             <div
               class="px-3 py-2  border-b  rounded-t-lg border-sky-600 bg-sky-700"
@@ -1674,25 +1668,12 @@
                   data-lang="modal_content_pre-sale2"  
                   class="mb-2 text-base text-center font-semibold text-white">Минимальная сумма оплаты:</h2>
                   <ul class="max-w-md mx-auto space-y-1 text-center  list-none list-inside text-gray-400">
-                      <li>
-                          TON - 2 TON
-                      </li>
-                      <li>
-                          NOT - 730 NOT
-                      </li>
-                      <li>
-                          USDT(TRC-20) - 12 USDT
-                      </li>
-                      <li>
-                          SOL - 0.08 SOL
-                      </li>
-
-                      <li>
-                          BNB (BEP-20) - 0.02 BNB
-                      </li>
-                      <li>
-                          ETHEREUM (ERC-20) - 0.035 ETH
-                      </li>
+                      <li>TON - 2 TON</li>
+                      <li>NOT - 730 NOT</li>
+                      <li>USDT(TRC-20) - 12 USDT</li>
+                      <li>SOL - 0.08 SOL</li>
+                      <li>BNB (BEP-20) - 0.02 BNB</li>
+                      <li>ETHEREUM (ERC-20) - 0.035 ETH</li>
                   </ul>
                   <p 
                   data-lang="modal_content_pre-sale3"     
@@ -1706,119 +1687,105 @@
                   class="flex justify-around flex-wrap w-full " >
                     <button class="flex flex-col justify-center items-center flex-shrink-0" id="ERC-20-tab" data-tabs-target="#ERC-20" type="button" role="tab" aria-controls="ERC-20" aria-selected="false">
                       <img class="w-10 h-10" src="img/ETHEREUM (ERC-20).png" alt="ERC-20">
-                      <p class="text-xs md:text-base">ERC-20</p>
+                      <span class="text-xs md:text-base">ERC-20</span>
                     </button>
                     <button class="flex flex-col justify-center items-center flex-shrink-0" id="TON-tab" data-tabs-target="#TON" type="button" role="tab" aria-controls="TON" aria-selected="false">
                       <img class="w-10 h-10" src="img/ton.png" alt="TON">
-                      <p class="text-xs md:text-base">TON</p>
+                      <span class="text-xs md:text-base">TON</span>
                     </button>
                     <button class="flex flex-col justify-center items-center flex-shrink-0" id="TON2-tab" data-tabs-target="#TON2" type="button" role="tab" aria-controls="TON2" aria-selected="false">
                       <img class="w-10 h-10 " src="img/NOT.png" alt="TON">
-                      <p class="text-xs md:text-base">TON</p>
+                      <span class="text-xs md:text-base">TON</span>
                     </button>
                     <button class="flex flex-col justify-center items-center flex-shrink-0" id="TRC-20-tab" data-tabs-target="#TRC-20" type="button" role="tab" aria-controls="TRC-20" aria-selected="false">
                       <img class="w-10" src="img/USDT (TRC-20).png" alt="TRC-20">
-                      <p class="text-xs md:text-base">TRC-20</p>
+                      <span class="text-xs md:text-base">TRC-20</span>
                     </button>
                     <button class="flex flex-col justify-center items-center flex-shrink-0" id="SOL-tab" data-tabs-target="#SOL" type="button" role="tab" aria-controls="SOL" aria-selected="false">
                       <img class="w-10 h-10" src="img/SOL.png" alt="SOL">
-                      <p class="text-xs md:text-base">SOL</p>
+                      <span class="text-xs md:text-base">SOL</span>
                     </dbutton>
                     <button class="flex flex-col justify-center items-center flex-shrink-0" id="BEP-20-tab" data-tabs-target="#BEP-20" type="button" role="tab" aria-controls="BEP-20" aria-selected="false">
                       <img class="w-10 h-10" src="img/BNB.png" alt="BEP-20">
-                      <p class="text-xs md:text-base">BEP-20</p>
+                      <span class="text-xs md:text-base">BEP-20</span>
                     </button>
                   </div>
                   <div id="default-tab-content">
                       <div class="hidden p-0 md:p-4  bg-gray-800" id="ERC-20" role="tabpanel" aria-labelledby="ERC-20-tab">
                         <div class="relative  flex flex-col justify-between  rounded-lg ">
                         <div x-data="{ input: '0xAfe17a046c4459630F47a769dad271DAD772bE46', showMsg: false }" >              
-                            <div>
-                                <a type="button" @click="navigator.clipboard.writeText(input), showMsg = true, setTimeout(() => showMsg = false, 2000)" class="group inline-flex flex-col w-full items-center justify-center px-5 text-sm font-normal text-center text-white truncate rounded-xl cursor-copy">
+                                <div @click="navigator.clipboard.writeText(input), showMsg = true, setTimeout(() => showMsg = false, 2000)" class="group inline-flex flex-col w-full items-center justify-center px-5 text-sm font-normal text-center text-white truncate rounded-xl cursor-copy">
                                     <div x-show="showMsg" @click.away="showMsg = false" class="  z-20 max-w-sm overflow-hidden bg-green-600 mb-5 rounded-xl" style="display: none;">
-                                        <p class="p-0.5 flex items-center justify-center font-semibold text-green-50">Скопированно!</p>
+                                        <span class="p-0.5 flex items-center justify-center font-semibold text-green-50">Скопированно!</span>
                                     </div>
-                                <button id="clipboard" class="relative bg-gray-700 rounded-lg px-1 py-2 cursor-copy text-sm font-lg">0xAfe17a046c4459630F47a769dad271DAD772bE46</button>
-  
-                                </a>
-           
-                            </div>
+                                <p id="clipboard" class="relative bg-gray-700 rounded-lg px-1 py-2 cursor-copy text-sm font-lg">0xAfe17a046c4459630F47a769dad271DAD772bE46</p>
+                                </div>
                         </div>
                         </div>
                       </div>
                       <div class="hidden p-0 md:p-4  bg-gray-800" id="TON" role="tabpanel" aria-labelledby="TON-tab">
                         <div class="relative  flex flex-col justify-between  rounded-lg ">
                         <div x-data="{ input: 'UQA8jClo16YcPfoeYmYwZKuboFMaAvgjHetTSfcFatcxa2or', showMsg: false }" >              
-                            <div>
-                                <a type="button" @click="navigator.clipboard.writeText(input), showMsg = true, setTimeout(() => showMsg = false, 2000)" class="group inline-flex flex-col w-full items-center justify-center px-5 text-sm font-normal text-center text-white truncate rounded-xl cursor-copy">
+                                <div @click="navigator.clipboard.writeText(input), showMsg = true, setTimeout(() => showMsg = false, 2000)" class="group inline-flex flex-col w-full items-center justify-center px-5 text-sm font-normal text-center text-white truncate rounded-xl cursor-copy">
                                     <div x-show="showMsg" @click.away="showMsg = false" class="  z-20 max-w-sm overflow-hidden bg-green-600 mb-5 rounded-xl" style="display: none;">
                                         <p class="p-0.5 flex items-center justify-center font-semibold text-green-50">Скопированно!</p>
                                     </div>
-                                <button id="clipboard" class="relative bg-gray-700 rounded-lg px-1 py-2 cursor-copy text-sm font-lg">UQA8jClo16YcPfoeYmYwZKuboFMaAvgjHetTSfcFatcxa2or</button>
-                                </a>
-                            </div>
+                                <p id="clipboard" class="relative bg-gray-700 rounded-lg px-1 py-2 cursor-copy text-sm font-lg">UQA8jClo16YcPfoeYmYwZKuboFMaAvgjHetTSfcFatcxa2or</p>
+                                </div>
                         </div>
                         </div>
                       </div>
                       <div class="hidden p-0 md:p-4  bg-gray-800" id="TON2" role="tabpanel" aria-labelledby="TON2-tab">
                         <div class="relative  flex flex-col justify-between  rounded-lg ">
                         <div x-data="{ input: 'UQCYF-7qC6hXdi_NKF09R17APqU8wQws3O-pRz8RlrzXGDLC', showMsg: false }" >              
-                            <div>
-                                <a type="button" @click="navigator.clipboard.writeText(input), showMsg = true, setTimeout(() => showMsg = false, 2000)" class="group inline-flex flex-col w-full items-center justify-center px-5 text-sm font-normal text-center text-white truncate rounded-xl cursor-copy">
+                                <div @click="navigator.clipboard.writeText(input), showMsg = true, setTimeout(() => showMsg = false, 2000)" class="group inline-flex flex-col w-full items-center justify-center px-5 text-sm font-normal text-center text-white truncate rounded-xl cursor-copy">
                                     <div x-show="showMsg" @click.away="showMsg = false" class="  z-20 max-w-sm overflow-hidden bg-green-600 mb-5 rounded-xl" style="display: none;">
                                         <p class="p-0.5 flex items-center justify-center font-semibold text-green-50">Скопированно!</p>
                                     </div>
-                                <button id="clipboard" class="relative bg-gray-700 rounded-lg px-1 py-2 cursor-copy text-sm font-lg">UQCYF-7qC6hXdi_NKF09R17APqU8wQws3O-pRz8RlrzXGDLC</button>
-                                </a>
-                            </div>
+                                <p id="clipboard" class="relative bg-gray-700 rounded-lg px-1 py-2 cursor-copy text-sm font-lg">UQCYF-7qC6hXdi_NKF09R17APqU8wQws3O-pRz8RlrzXGDLC</p>
+                                    </div>
                         </div>
                         </div>
                       </div>
                       <div class="hidden p-0 md:p-4  bg-gray-800" id="TRC-20" role="tabpanel" aria-labelledby="TRC-20-tab">
                         <div class="relative  flex flex-col justify-between  rounded-lg ">
                         <div x-data="{ input: 'TXr9gjH8m8tTHgHRucQbVdNFuXRXgkp5NG', showMsg: false }" >              
-                            <div>
-                                <a type="button" @click="navigator.clipboard.writeText(input), showMsg = true, setTimeout(() => showMsg = false, 2000)" class="group inline-flex flex-col w-full items-center justify-center px-5 text-sm font-normal text-center text-white truncate rounded-xl cursor-copy">
+
+                                <div @click="navigator.clipboard.writeText(input), showMsg = true, setTimeout(() => showMsg = false, 2000)" class="group inline-flex flex-col w-full items-center justify-center px-5 text-sm font-normal text-center text-white truncate rounded-xl cursor-copy">
                                     <div x-show="showMsg" @click.away="showMsg = false" class="  z-20 max-w-sm overflow-hidden bg-green-600 mb-5 rounded-xl" style="display: none;">
                                         <p class="p-0.5 flex items-center justify-center font-semibold text-green-50">Скопированно!</p>
                                     </div>
-                                <button id="clipboard" class="relative bg-gray-700 rounded-lg px-1 py-2 cursor-copy text-sm font-lg">TXr9gjH8m8tTHgHRucQbVdNFuXRXgkp5NG</button>
-                                </a>
-                            </div>
+                                <p id="clipboard" class="relative bg-gray-700 rounded-lg px-1 py-2 cursor-copy text-sm font-lg">TXr9gjH8m8tTHgHRucQbVdNFuXRXgkp5NG</p>
+                                  </div>
+
                         </div>
                         </div>
                       </div>
                       <div class="hidden p-0 md:p-4  bg-gray-800" id="SOL" role="tabpanel" aria-labelledby="SOL-tab">
                         <div class="relative  flex flex-col justify-between  rounded-lg ">
                         <div x-data="{ input: 'Hb7EZjN2XSMC3L82w33fdbck5cL3ihfJNZRLdsp7sttQ', showMsg: false }" >              
-                            <div>
-                                <a type="button" @click="navigator.clipboard.writeText(input), showMsg = true, setTimeout(() => showMsg = false, 2000)" class="group inline-flex flex-col w-full items-center justify-center px-5 text-sm font-normal text-center text-white truncate rounded-xl cursor-copy">
+                                <div @click="navigator.clipboard.writeText(input), showMsg = true, setTimeout(() => showMsg = false, 2000)" class="group inline-flex flex-col w-full items-center justify-center px-5 text-sm font-normal text-center text-white truncate rounded-xl cursor-copy">
                                     <div x-show="showMsg" @click.away="showMsg = false" class="  z-20 max-w-sm overflow-hidden bg-green-600 mb-5 rounded-xl" style="display: none;">
                                         <p class="p-0.5 flex items-center justify-center font-semibold text-green-50">Скопированно!</p>
                                     </div>
-                                <button id="clipboard" class="relative bg-gray-700 rounded-lg px-1 py-2 cursor-copy text-sm font-lg">Hb7EZjN2XSMC3L82w33fdbck5cL3ihfJNZRLdsp7sttQ</button>
-                                </a>
-                            </div>
+                                <p id="clipboard" class="relative bg-gray-700 rounded-lg px-1 py-2 cursor-copy text-sm font-lg">Hb7EZjN2XSMC3L82w33fdbck5cL3ihfJNZRLdsp7sttQ</p>
+                                    </div>
                         </div>
                         </div>  
                       </div>
                       <div class="hidden p-0 md:p-4  bg-gray-800" id="BEP-20" role="tabpanel" aria-labelledby="BEP-20-tab">
                         <div class="relative  flex flex-col justify-between  rounded-lg ">
                         <div x-data="{ input: '0x8432d02ebe5c99bda7ace3fca66a2da5ea53d9d2', showMsg: false }" >              
-                            <div>
-                                <a type="button" @click="navigator.clipboard.writeText(input), showMsg = true, setTimeout(() => showMsg = false, 2000)" class="group inline-flex flex-col w-full items-center justify-center px-5 text-sm font-normal text-center text-white truncate rounded-xl cursor-copy">
+                                <div @click="navigator.clipboard.writeText(input), showMsg = true, setTimeout(() => showMsg = false, 2000)" class="group inline-flex flex-col w-full items-center justify-center px-5 text-sm font-normal text-center text-white truncate rounded-xl cursor-copy">
                                     <div x-show="showMsg" @click.away="showMsg = false" class="  z-20 max-w-sm overflow-hidden bg-green-600 mb-5 rounded-xl" style="display: none;">
                                         <p class="p-0.5 flex items-center justify-center font-semibold text-green-50">Скопированно!</p>
                                     </div>
-                                <button id="clipboard" class="relative bg-gray-700 rounded-lg px-1 py-2 cursor-copy text-sm font-lg">0x8432d02ebe5c99bda7ace3fca66a2da5ea53d9d2</button>
-                                </a>
-                            </div>
+                                <p id="clipboard" class="relative bg-gray-700 rounded-lg px-1 py-2 cursor-copy text-sm font-lg">0x8432d02ebe5c99bda7ace3fca66a2da5ea53d9d2</p>
+                                  </div>
                         </div>
                         </div>  
                       </div>
                   </div>
-
-
               </div>
 
           </div>
